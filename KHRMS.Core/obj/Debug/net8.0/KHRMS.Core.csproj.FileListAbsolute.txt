@@ -1,0 +1,12 @@
+C:\KHRMS\KHRMS\KHRMS.Core\bin\Debug\net8.0\KHRMS.Core.deps.json
+C:\KHRMS\KHRMS\KHRMS.Core\bin\Debug\net8.0\KHRMS.Core.dll
+C:\KHRMS\KHRMS\KHRMS.Core\bin\Debug\net8.0\KHRMS.Core.pdb
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.AssemblyInfoInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.AssemblyInfo.cs
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.csproj.CoreCompileInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.sourcelink.json
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.dll
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\refint\KHRMS.Core.dll
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\KHRMS.Core.pdb
+C:\KHRMS\KHRMS\KHRMS.Core\obj\Debug\net8.0\ref\KHRMS.Core.dll

@@ -1,0 +1,6 @@
+@KHRMS_HostAddress = http://localhost:5220
+
+GET {{KHRMS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

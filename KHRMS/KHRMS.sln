@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KHRMS", "KHRMS.csproj", "{83BC08E8-824E-4EB6-8887-C6169D3B4308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KHRMS.Core", "..\KHRMS.Core\KHRMS.Core.csproj", "{6B688A0C-548E-4DA5-81C3-F8AFAD680F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KHRMS.Infrastructure", "..\KHRMS.Infrastructure\KHRMS.Infrastructure.csproj", "{C244C55F-9E00-4553-93BA-744C0053C02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KHRMS.Services", "..\KHRMS.Services\KHRMS.Services.csproj", "{66A86A45-413F-4ED8-A545-FAEC9C30BC18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83BC08E8-824E-4EB6-8887-C6169D3B4308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BC08E8-824E-4EB6-8887-C6169D3B4308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BC08E8-824E-4EB6-8887-C6169D3B4308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BC08E8-824E-4EB6-8887-C6169D3B4308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B688A0C-548E-4DA5-81C3-F8AFAD680F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B688A0C-548E-4DA5-81C3-F8AFAD680F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B688A0C-548E-4DA5-81C3-F8AFAD680F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B688A0C-548E-4DA5-81C3-F8AFAD680F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C244C55F-9E00-4553-93BA-744C0053C02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C244C55F-9E00-4553-93BA-744C0053C02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C244C55F-9E00-4553-93BA-744C0053C02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C244C55F-9E00-4553-93BA-744C0053C02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A86A45-413F-4ED8-A545-FAEC9C30BC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A86A45-413F-4ED8-A545-FAEC9C30BC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A86A45-413F-4ED8-A545-FAEC9C30BC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A86A45-413F-4ED8-A545-FAEC9C30BC18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01BDE511-CE40-491B-990E-BA9B2719C304}
+	EndGlobalSection
+EndGlobal

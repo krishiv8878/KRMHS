@@ -1,0 +1,16 @@
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.deps.json
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.dll
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.pdb
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Core.dll
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Core.pdb
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.csproj.AssemblyReference.cache
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.AssemblyInfoInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.AssemblyInfo.cs
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.sourcelink.json
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.csproj.CopyComplete
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.dll
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\refint\KHRMS.Infrastructure.dll
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.pdb
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\ref\KHRMS.Infrastructure.dll

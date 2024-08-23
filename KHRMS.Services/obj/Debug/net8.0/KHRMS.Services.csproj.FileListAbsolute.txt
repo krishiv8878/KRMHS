@@ -1,0 +1,16 @@
+C:\KHRMS\KHRMS\KHRMS.Services\bin\Debug\net8.0\KHRMS.Services.deps.json
+C:\KHRMS\KHRMS\KHRMS.Services\bin\Debug\net8.0\KHRMS.Services.dll
+C:\KHRMS\KHRMS\KHRMS.Services\bin\Debug\net8.0\KHRMS.Services.pdb
+C:\KHRMS\KHRMS\KHRMS.Services\bin\Debug\net8.0\KHRMS.Core.dll
+C:\KHRMS\KHRMS\KHRMS.Services\bin\Debug\net8.0\KHRMS.Core.pdb
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.csproj.AssemblyReference.cache
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.AssemblyInfoInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.AssemblyInfo.cs
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.csproj.CoreCompileInputs.cache
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.sourcelink.json
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.csproj.CopyComplete
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.dll
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\refint\KHRMS.Services.dll
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\KHRMS.Services.pdb
+C:\KHRMS\KHRMS\KHRMS.Services\obj\Debug\net8.0\ref\KHRMS.Services.dll

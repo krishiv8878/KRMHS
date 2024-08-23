@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KHRMS.Services/1.0.0": {
+        "dependencies": {
+          "KHRMS.Core": "1.0.0"
+        },
+        "runtime": {
+          "KHRMS.Services.dll": {}
+        }
+      },
+      "KHRMS.Core/1.0.0": {
+        "runtime": {
+          "KHRMS.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KHRMS.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KHRMS.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
