@@ -7,7 +7,7 @@ namespace KHRMS.Services.Interfaces
         Task<bool> CreateCandidate(Candidate candidate);
         Task<IEnumerable<Candidate>> GetAllCandidates();
         Task<Candidate> GetCandidateById(int candidateId);
-        Task<bool> UpdateCandidate(Candidate candidate);
+        //Task<bool> UpdateCandidate(Candidate candidate);
         Task<bool> DeleteCandidate(int candidateId);
     }
 }

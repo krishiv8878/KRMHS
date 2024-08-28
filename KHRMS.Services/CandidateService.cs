@@ -10,6 +10,7 @@ namespace KHRMS.Services
         {
             if (candidate != null)
             {
+
                 await _unitOfWork.Candidates.Add(candidate);
 
                 var result = _unitOfWork.Save();
@@ -56,9 +57,9 @@ namespace KHRMS.Services
             }
             return null;
         }
-        public Task<bool> UpdateCandidate(Candidate candidate)
-        {
-            throw new NotImplementedException();
-        }
+        //public async Task<bool> UpdateCandidate(Candidate candidate)
+        //{
+        //    throw NotImplementedException();
+        //}
     }
 }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KHRMS.Core\KHRMS.Core.csproj" />
+    <ProjectReference Include="..\KHRMS.Infrastructure\KHRMS.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

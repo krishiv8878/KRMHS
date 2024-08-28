@@ -106,6 +106,12 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -154,6 +160,9 @@
             "projectReferences": {
               "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj": {
                 "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj"
+              },
+              "C:\\KHRMS\\KHRMS\\KHRMS.Infrastructure\\KHRMS.Infrastructure.csproj": {
+                "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Infrastructure\\KHRMS.Infrastructure.csproj"
               }
             }
           }

@@ -1,3 +1,11 @@
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.csproj.AssemblyReference.cache
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.AssemblyInfoInputs.cache
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.AssemblyInfo.cs
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.csproj.CoreCompileInputs.cache
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.MvcApplicationPartsAssemblyInfo.cs
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.MvcApplicationPartsAssemblyInfo.cache
+C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.sourcelink.json
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\appsettings.Development.json
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\appsettings.json
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\KHRMS.exe
@@ -120,14 +128,6 @@ C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\KHRMS.Services.dll
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\KHRMS.Infrastructure.pdb
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\KHRMS.Services.pdb
 C:\KHRMS\KHRMS\KHRMS\bin\Debug\net8.0\KHRMS.Core.pdb
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.csproj.AssemblyReference.cache
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.GeneratedMSBuildEditorConfig.editorconfig
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.AssemblyInfoInputs.cache
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.AssemblyInfo.cs
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.csproj.CoreCompileInputs.cache
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.MvcApplicationPartsAssemblyInfo.cs
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.MvcApplicationPartsAssemblyInfo.cache
-C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\KHRMS.sourcelink.json
 C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\staticwebassets.build.json
 C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\staticwebassets.development.json
 C:\KHRMS\KHRMS\KHRMS\obj\Debug\net8.0\staticwebassets\msbuild.KHRMS.Microsoft.AspNetCore.StaticWebAssets.props

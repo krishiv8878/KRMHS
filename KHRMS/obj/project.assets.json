@@ -1607,7 +1607,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "KHRMS.Core": "1.0.0"
+          "KHRMS.Core": "1.0.0",
+          "KHRMS.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/KHRMS.Services.dll": {}

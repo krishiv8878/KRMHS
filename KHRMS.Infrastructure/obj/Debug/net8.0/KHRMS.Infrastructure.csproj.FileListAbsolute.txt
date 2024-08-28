@@ -1,4 +1,5 @@
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.deps.json
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.runtimeconfig.json
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.dll
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Infrastructure.pdb
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\bin\Debug\net8.0\KHRMS.Core.dll
@@ -13,4 +14,5 @@ C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.csproj
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.dll
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\refint\KHRMS.Infrastructure.dll
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.pdb
+C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\KHRMS.Infrastructure.genruntimeconfig.cache
 C:\KHRMS\KHRMS\KHRMS.Infrastructure\obj\Debug\net8.0\ref\KHRMS.Infrastructure.dll
