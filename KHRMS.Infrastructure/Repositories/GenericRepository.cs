@@ -36,5 +36,10 @@ namespace KHRMS.Infrastructure
         {
             _dbContext.Set<T>().Update(entity);
         }
+
+        public Task<T> GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
