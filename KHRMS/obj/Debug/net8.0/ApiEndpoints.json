@@ -1,0 +1,118 @@
+[
+  {
+    "ContainingType": "KHRMS.Controllers.CandidateController",
+    "Method": "AddCandidate",
+    "RelativePath": "api/Candidate/AddCandidate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidate",
+        "Type": "KHRMS.Core.Candidate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.CandidateController",
+    "Method": "DeleteCandidate",
+    "RelativePath": "api/Candidate/DeleteCandidate",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidateId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.CandidateController",
+    "Method": "GetCandidates",
+    "RelativePath": "api/Candidate/GetCandidates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.CandidateController",
+    "Method": "UpdateCandidate",
+    "RelativePath": "api/Candidate/UpdateCandidate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "candidate",
+        "Type": "KHRMS.Core.Candidate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.DesignationController",
+    "Method": "AddDesignation",
+    "RelativePath": "api/Designation/AddDesignation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designation",
+        "Type": "KHRMS.Core.Designation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.DesignationController",
+    "Method": "DeleteDesignation",
+    "RelativePath": "api/Designation/DeleteDesignation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DesignationId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.DesignationController",
+    "Method": "GetAllDesignation",
+    "RelativePath": "api/Designation/GetAllDesignation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KHRMS.Controllers.DesignationController",
+    "Method": "UpdateDesignation",
+    "RelativePath": "api/Designation/UpdateDesignation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designation",
+        "Type": "KHRMS.Core.Designation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

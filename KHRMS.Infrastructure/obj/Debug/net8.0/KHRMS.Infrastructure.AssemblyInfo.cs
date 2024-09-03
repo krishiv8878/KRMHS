@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KHRMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a37cbd9653c2dbb1acc8187adb94587ab6238de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9e3cb2b13736e404cbb3e5c32df0b4a3f26b1bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("KHRMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KHRMS.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
