@@ -18,6 +18,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICandidateRepository, CandidateRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
+            services.AddScoped<IDesignationRepository, DesignationRepository>();
 
             return services;
         }

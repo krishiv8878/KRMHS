@@ -12,5 +12,6 @@ namespace KHRMS.Infrastructure
 
         public DbSet<Candidate> Candidates { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Designation> Designations { get; set; }
     }
 }
