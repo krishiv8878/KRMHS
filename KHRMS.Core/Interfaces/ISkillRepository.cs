@@ -2,8 +2,7 @@
 
 namespace KHRMS.Core.Interfaces
 {
-    public interface ISkillRepository :IGenericRepository<Skill>
+    public interface ISkillRepository : IGenericRepository<Skill>
     {
-
     }
 }
