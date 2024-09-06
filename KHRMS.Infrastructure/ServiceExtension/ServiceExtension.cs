@@ -19,6 +19,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<ICandidateRepository, CandidateRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
             services.AddScoped<IDesignationRepository, DesignationRepository>();
+            services.AddScoped<IHolidayRepository, HolidayRepository>();
 
             return services;
         }
