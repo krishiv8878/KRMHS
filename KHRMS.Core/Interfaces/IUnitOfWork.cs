@@ -7,6 +7,8 @@ namespace KHRMS.Core
         ICandidateRepository Candidates { get; }
         ISkillRepository Skills { get; }
         IDesignationRepository Designations { get; }
+        IHolidayRepository Holidays { get; }
+
         int Save();
     }
 }

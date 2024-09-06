@@ -12,13 +12,16 @@ namespace KHRMS.Infrastructure
         public ISkillRepository Skills { get; }
         public IDesignationRepository Designations { get; }
 
+        public IHolidayRepository Holidays { get; }
+
         public UnitOfWork(KHRMSContextClass dbContext,
-                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository)
+                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository,IHolidayRepository holidayRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
             Skills = skillRepository;
             Designations = designationRepository;
+            Holidays = holidayRepository;
         }
 
         public int Save()
