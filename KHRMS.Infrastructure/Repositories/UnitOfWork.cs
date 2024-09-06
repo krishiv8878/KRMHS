@@ -1,6 +1,5 @@
 ﻿using KHRMS.Core;
 using KHRMS.Core.Interfaces;
-using KHRMS.Core.Models;
 
 namespace KHRMS.Infrastructure
 {
@@ -14,13 +13,19 @@ namespace KHRMS.Infrastructure
 
         public IHolidayRepository Holidays { get; }
 
+        public IEmployeeRepository Employees { get; }
         public UnitOfWork(KHRMSContextClass dbContext,
-                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository,IHolidayRepository holidayRepository)
+                            ICandidateRepository candidateRepository,
+                            ISkillRepository skillRepository,
+                            IDesignationRepository designationRepository,
+                            IHolidayRepository holidayRepository,
+                            IEmployeeRepository employeesRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
             Skills = skillRepository;
             Designations = designationRepository;
+            Employees = employeesRepository;
             Holidays = holidayRepository;
         }
 
