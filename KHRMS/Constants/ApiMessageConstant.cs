@@ -31,7 +31,18 @@
         public static readonly string DesignationNotUpdated = "Desgnation is not updated successfully";
         public static readonly string DesignationDeleted = "Desgnation is deleted successfully";
         public static readonly string DesignationNotDeleted = "Desgnation is not deleted successfully";
+        public static string NoDesgnationFound = "No Skills found!";
 
-        public static string NoDesgnationFound { get; internal set; }
+        /// <summary>
+        /// This is Holiday Messsages Consatant 
+        /// </summary>
+        public static readonly string HolidayFound = "Holiday retrieved successfully";
+        public static readonly string NoHolidayFound = "No Holiday found!";
+        public static readonly string HolidayAdded = "Holiday saved successfully";
+        public static readonly string HolidayNotAdded = "Holiday is not saved syccessfully";
+        public static readonly string HolidayUpdated = "Holiday updated successfully";
+        public static readonly string HolidayNotUpdated = "Holiday is not deleted successfully";
+        public static readonly string HolidayDeleted = "Holiday is deleted successfully";
+        public static readonly string HolidayNotDeleted = "Holiday is not deleted successfully";
     }
 }
