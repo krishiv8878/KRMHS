@@ -7,6 +7,7 @@ namespace KHRMS.Core
         ICandidateRepository Candidates { get; }
         ISkillRepository Skills { get; }
         IDesignationRepository Designations { get; }
+        IAssetsMasterRepository AssetsMaster { get; }
         int Save();
     }
 }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KHRMS.Core.Models
 {
-    internal class AssetsMaster : KHRMSBase
+    public class AssetsMaster : KHRMSBase
     {
 
         [Key]
@@ -11,9 +11,18 @@ namespace KHRMS.Core.Models
         public long Id { get; set; }
 
         [StringLength(100)]
-        [Required(ErrorMessage = "AssetsMAsterName is required")]
+        [Required(ErrorMessage = "AssetsMasterName is required")]
         public string? AssetsMasterName { get; set; }
 
+
+        [Required(ErrorMessage = "AssetsMaster Description is required")]
+        public DateTime? Description { get; set; }
+
+        [Required(ErrorMessage = "SerialNumber IS required ")]
+        public string? SerialNumber {  get; set; }
+
+        [Required(ErrorMessage = "DateOfPurchase")]
+        public DateTime? DateOfPurchase { get; set; }
         public bool? IsActive { get; set; }
 
         public bool? IsDeleted { get; set; }

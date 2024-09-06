@@ -2,7 +2,8 @@
 
 namespace KHRMS.Core.Interfaces
 {
-    internal interface IAssetsMasterRepository :  IGenericRepository<AssetsMaster>
+    public interface IAssetsMasterRepository : IGenericRepository<AssetsMaster>
     {
+        Task<AssetsMaster> Delete(long assetsMasterId);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using KHRMS.Core;
 using KHRMS.Core.Interfaces;
 using KHRMS.Core.Models;
+using KHRMS.Infrastructure.Repositories;
 
 namespace KHRMS.Infrastructure
 {
@@ -12,13 +13,16 @@ namespace KHRMS.Infrastructure
         public ISkillRepository Skills { get; }
         public IDesignationRepository Designations { get; }
 
+        public IAssetsMasterRepository AssetsMaster { get; }
+
         public UnitOfWork(KHRMSContextClass dbContext,
-                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository)
+                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository, IAssetsMasterRepository assetsMasterRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
             Skills = skillRepository;
             Designations = designationRepository;
+            AssetsMaster = assetsMasterRepository;
         }
 
         public int Save()
