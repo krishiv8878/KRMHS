@@ -15,7 +15,11 @@ namespace KHRMS.Infrastructure
 
         public IEmployeeRepository Employees { get; }
         public UnitOfWork(KHRMSContextClass dbContext,
-                            ICandidateRepository candidateRepository,ISkillRepository skillRepository,IDesignationRepository designationRepository, IHolidayRepository holidayRepository)
+                            ICandidateRepository candidateRepository,
+                            ISkillRepository skillRepository,
+                            IDesignationRepository designationRepository,
+                            IHolidayRepository holidayRepository,
+                            IEmployeeRepository employeesRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
