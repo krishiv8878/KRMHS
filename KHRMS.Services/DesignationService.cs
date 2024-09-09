@@ -14,7 +14,7 @@ namespace KHRMS.Services
                 designation.CreatedDate = DateTime.Now;
                 await _unitOfWork.Designations.Add(designation);
 
-                var result = _unitOfWork.Save();
+                var result = _unitOfWork.Save();    
 
                 if (result > 0)
                     return true;
@@ -52,7 +52,7 @@ namespace KHRMS.Services
             return designations;
         }
 
-        public async Task<Designation> GetDesignationById(int designationId)
+        public async Task<Designation?> GetDesignationById(int designationId)
         {
             if (designationId > 0)
             {

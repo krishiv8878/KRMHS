@@ -44,5 +44,17 @@
         public static readonly string HolidayNotUpdated = "Holiday is not deleted successfully";
         public static readonly string HolidayDeleted = "Holiday is deleted successfully";
         public static readonly string HolidayNotDeleted = "Holiday is not deleted successfully";
+
+        /// <summary>
+        /// This is AssetsMaster Messsages Consatant 
+        /// </summary>
+        public static readonly string AssetsMasterFound = "AssetsMaster retrieved successfully";
+        public static readonly string AssetsMasterAdded = "AssetsMaster saved successfully";
+        public static readonly string AssetsMasterNotAdded = "AssetsMaster is not saved syccessfully";
+        public static readonly string AssetsMasterUpdated = "AssetsMaster updated successfully";
+        public static readonly string AssetsMasterNotUpdated = "AssesMaster is not updated successfully";
+        public static readonly string AssetsMasterDeleted = "AssetsMaster is deleted successfully";
+        public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted successfully";
+        public static readonly string AssetsMasterNotFound = "AssetsMaster is Not Found ";
     }
 }

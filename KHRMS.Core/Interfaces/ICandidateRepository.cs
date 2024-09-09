@@ -1,6 +1,9 @@
-﻿namespace KHRMS.Core
+﻿using KHRMS.Core.Models;
+
+namespace KHRMS.Core.Interfaces
 {
-    public interface ICandidateRepository : IGenericRepository<Candidate>
-    {
-    }
+public interface ICandidateRepository : IGenericRepository<Candidate>
+{
+
+}
 }

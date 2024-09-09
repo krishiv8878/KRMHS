@@ -1,15 +1,13 @@
 ﻿using KHRMS.Core.Interfaces;
+namespace KHRMS.Core;
 
-namespace KHRMS.Core
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        ICandidateRepository Candidates { get; }
-        ISkillRepository Skills { get; }
-        IDesignationRepository Designations { get; }
-        IEmployeeRepository Employees { get; }
-        IHolidayRepository Holidays { get; }
-
-        int Save();
-    }
+    ICandidateRepository Candidates { get; }
+    ISkillRepository Skills { get; }
+    IDesignationRepository Designations { get; }
+    IEmployeeRepository Employees { get; }
+    IHolidayRepository Holidays { get; }
+    IAssetsMasterRepository AssetsMasters { get; }
+    int Save();
 }

@@ -1,5 +1,6 @@
 ﻿using KHRMS.Constants;
 using KHRMS.Core;
+using KHRMS.Core.Models;
 using KHRMS.Infrastructure;
 using KHRMS.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;

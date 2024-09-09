@@ -1,4 +1,5 @@
 ﻿using KHRMS.Core;
+using KHRMS.Core.Models;
 using KHRMS.Services.Interfaces;
 
 namespace KHRMS.Services
@@ -47,7 +48,7 @@ namespace KHRMS.Services
             var candidates = await _unitOfWork.Candidates.GetAll();
             return candidates;
         }
-        public async Task<Candidate> GetCandidateById(int candidateId)
+        public async Task<Candidate?> GetCandidateById(int candidateId)
         {
             if (candidateId > 0)
             {
