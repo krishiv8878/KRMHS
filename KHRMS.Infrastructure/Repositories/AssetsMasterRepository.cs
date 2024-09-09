@@ -13,6 +13,6 @@ namespace KHRMS.Infrastructure.Repositories
         public AssetsMasterRepository(KHRMSContextClass dbContext) : base(dbContext)
         {
 
-        }
+        }   
     }
 }

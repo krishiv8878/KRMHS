@@ -1,6 +1,7 @@
 ﻿using KHRMS.Constants;
 using KHRMS.Core.Models;
 using KHRMS.Infrastructure;
+using KHRMS.Services;
 using KHRMS.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -9,43 +10,43 @@ namespace KHRMS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DesignationController(IDesignationService designationService) : ControllerBase
+    public class AssetsMasterController(IAssetsMasterService AssetsMasterService) : ControllerBase
     {
-        public readonly IDesignationService _designationService = designationService;
+        public readonly IAssetsMasterService _assetsMasterService = AssetsMasterService;
 
 
         [HttpGet]
-        [Route("GetDesignations")]
+        [Route("GetAssetsMaster")]
         public async Task<IActionResult> GetDesignations()
         {
-            var designations = await _designationService.GetAllDesignations();
-            if (designations == null)
+            var assetsMaster = await _assetsMasterService.GetAllAssetsMaster();
+            if (assetsMaster == null)
             {
                 return NotFound();
             }
             // Use the wrapper class to create a consistent response
-            var response = new ApiResponse<List<Designation>>
+            var response = new ApiResponse<List<AssetsMaster>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = designations.Any() ? ApiMessageConstant.DesgnationFound : ApiMessageConstant.DesignationNotFound,
-                Data = designations.ToList()
+                Message = assetsMaster.Any() ? ApiMessageConstant.AssetsMasterFound : ApiMessageConstant.AssetsMasterNotFound,
+                Data = assetsMaster.ToList()
             };
             return Ok(response);
         }
 
         [HttpPost]
-        [Route("AddDesignation")]
-        public async Task<IActionResult> AddDesignation(Designation designation)
+        [Route("AddAssetsMaster")]
+        public async Task<IActionResult> AddAssetsMaster(AssetsMaster assetsMaster)
         {
-            var isDesignationAdded = await _designationService.CreateDesignation(designation);
-            if (isDesignationAdded)
+            var isAssetsMasterAdded = await _assetsMasterService.AddAssetsMaster(assetsMaster);
+            if (isAssetsMasterAdded)
             {
                 // Use the wrapper class to create a consistent response
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.DesignationAdded,
-                    Data = isDesignationAdded
+                    Message = ApiMessageConstant.AssetsMasterAdded,
+                    Data = isAssetsMasterAdded
                 };
                 return Ok(response);
             }
@@ -54,26 +55,26 @@ namespace KHRMS.Controllers
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.DesignationNotAdded,
-                    Data = isDesignationAdded
+                    Message = ApiMessageConstant.AssetsMasterNotAdded,
+                    Data = isAssetsMasterAdded
                 };
                 return BadRequest(response);
             }
         }
 
         [HttpPut]
-        [Route("UpdateDesignation")]
-        public async Task<IActionResult> UpdateDesignation(Designation designation)
+        [Route("UpdateAssetsMaster")]
+        public async Task<IActionResult> UpdateAssetsMaster(AssetsMaster assetsMaster)
         {
-            var isDesignationEdited = await _designationService.UpdateDesignation(designation);
-            if (isDesignationEdited)
+            var isAssetsMasterEdited = await _assetsMasterService.UpdateAssetsMaster(assetsMaster);
+            if (isAssetsMasterEdited)
             {
                 // Use the wrapper class to create a consistent response
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.DesignationUpdated,
-                    Data = isDesignationEdited
+                    Message = ApiMessageConstant.AssetsMasterUpdated,
+                    Data = isAssetsMasterEdited
                 };
                 return Ok(response);
             }
@@ -82,26 +83,26 @@ namespace KHRMS.Controllers
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.DesignationNotUpdated,
-                    Data = isDesignationEdited
+                    Message = ApiMessageConstant.AssetsMasterNotUpdated,
+                    Data = isAssetsMasterEdited
                 };
                 return BadRequest(response);
             }
         }
 
         [HttpDelete]
-        [Route("DeleteDesignation")]
-        public async Task<IActionResult> DeleteDesignation(long designationId)
+        [Route("DeleteAssetsMaster")]
+        public async Task<IActionResult> DeleteAssetsMaster(long AssetsMasterId)
         {
-            var isDesignationDeleted = await _designationService.DeleteDesignation(designationId);
-            if (isDesignationDeleted)
+            var isAssetsMasterDeleted = await _assetsMasterService.DeleteAssetsMaster(AssetsMasterId);
+            if (isAssetsMasterDeleted)
             {
                 // Use the wrapper class to create a consistent response
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.DesignationDeleted,
-                    Data = isDesignationDeleted
+                    Message = ApiMessageConstant.AssetsMasterDeleted,
+                    Data = isAssetsMasterDeleted
                 };
                 return Ok(response);
             }
@@ -110,8 +111,8 @@ namespace KHRMS.Controllers
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.DesignationNotDeleted,
-                    Data = isDesignationDeleted
+                    Message = ApiMessageConstant.AssetsMasterNotDeleted,
+                    Data = isAssetsMasterDeleted
                 };
                 return BadRequest(response);
             }

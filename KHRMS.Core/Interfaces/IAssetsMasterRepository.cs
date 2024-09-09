@@ -4,6 +4,6 @@ namespace KHRMS.Core.Interfaces
 {
     public interface IAssetsMasterRepository : IGenericRepository<AssetsMaster>
     {
-        Task<AssetsMaster> Delete(long assetsMasterId);
+        Task<AssetsMaster> GetAssetsMasterById(int assetsMasterId);
     }
 }

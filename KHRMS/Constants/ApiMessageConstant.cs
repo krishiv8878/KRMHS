@@ -31,7 +31,19 @@
         public static readonly string DesignationNotUpdated = "Desgnation is not updated successfully";
         public static readonly string DesignationDeleted = "Desgnation is deleted successfully";
         public static readonly string DesignationNotDeleted = "Desgnation is not deleted successfully";
+        public static readonly string DesignationNotFound = "Designation is Not Found ";
+        
 
-        public static string NoDesgnationFound { get; internal set; }
+        public static readonly string AssetsMasterFound = "AssetsMaster retrieved successfully";
+        public static readonly string AssetsMasterAdded = "AssetsMaster saved successfully";
+        public static readonly string AssetsMasterNotAdded = "AssetsMaster is not saved syccessfully";
+        public static readonly string AssetsMasterUpdated = "AssetsMaster updated successfully";
+        public static readonly string AssetsMasterNotUpdated = "AssesMaster is not updated successfully";
+        public static readonly string AssetsMasterDeleted = "AssetsMaster is deleted successfully";
+        public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted successfully";
+        public static readonly string AssetsMasterNotFound = "AssetsMaster is Not Found ";
+        
+
+       
     }
 }

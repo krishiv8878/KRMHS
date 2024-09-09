@@ -23,8 +23,6 @@ namespace KHRMS.Core.Models
 
         [Required(ErrorMessage = "DateOfPurchase")]
         public DateTime? DateOfPurchase { get; set; }
-        public bool? IsActive { get; set; }
-
-        public bool? IsDeleted { get; set; }
+       
     }
 }

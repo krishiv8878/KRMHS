@@ -24,26 +24,7 @@ namespace KHRMS.Services
             return false;
         }
 
-        public async Task<bool> DeleteAssertMaster(long AssetsMasterId)
-        {
-            if (AssetsMasterId > 0)
-            {
-                var assetsMasterDetail = await _unitOfWork.AssetsMaster.Delete(AssetsMasterId);
-                if (assetsMasterDetail != null)
-                {
-                    assetsMasterDetail.IsDeleted = true;
-                    assetsMasterDetail.IsActive = false;
-
-                    _unitOfWork.AssetsMaster.Update(assetsMasterDetail);
-                    var result = _unitOfWork.Save();
-                    if (result > 0)
-                        return true;
-                    else
-                        return false;
-                }
-            }
-            return false;
-        }
+      
 
         public async Task<bool> DeleteAssetsMaster(long assetsMasterId)
         {
@@ -72,11 +53,11 @@ namespace KHRMS.Services
             return assetsMasterDetail;
         }
 
-        public async Task<AssetsMaster> GetAssetsMasterById(int AssetsMasterId)
+        public async Task<AssetsMaster> GetAssetsMasterById(int assetsMasterId)
         {
-            if (AssetsMasterId > 0)
+            if (assetsMasterId > 0)
             {
-                var assetsMasterDetail = await _unitOfWork.AssetsMaster.GetById(AssetsMasterId);
+                var assetsMasterDetail = await _unitOfWork.AssetsMaster.GetAssetsMasterById(assetsMasterId);
                 if (assetsMasterDetail != null)
                 {
                     return assetsMasterDetail;
@@ -85,10 +66,7 @@ namespace KHRMS.Services
             return null;
         }
 
-        public Task<AssetsMaster> GetAssetsMasterById()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public async Task<bool> UpdateAssetsMaster(AssetsMaster assetsMaster)
         {
