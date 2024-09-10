@@ -24,5 +24,74 @@ namespace KHRMS.Services
             }
             return false;
         }
+
+        public async Task<bool> DeleteEmployee(long employeeId)
+        {
+            if (employeeId > 0)
+            {
+                var employeeDetails = await _unitOfWork.Employees.GetById(employeeId);
+                if (employeeDetails != null)
+                {
+                    employeeDetails.IsDeleted = true;
+                    employeeDetails.IsActive = false;
+
+                    _unitOfWork.Employees.Update(employeeDetails);
+                    var result = _unitOfWork.Save();
+                    if (result > 0)
+                        return true;
+                    else
+                        return false;
+                }
+            }
+            return false;
+        }
+
+        public async Task<IEnumerable<Employee>> GetAllEmployees()
+        {
+            var employees = await _unitOfWork.Employees.GetAll();
+            return employees;
+        }
+
+        public async Task<Employee> GetEmployeeById(int employeeId)
+        {
+            if (employeeId > 0)
+            {
+                var employeeDetails = await _unitOfWork.Employees.GetById(employeeId);
+                if (employeeDetails != null)
+                {
+                    return employeeDetails;
+                }
+            }
+            return null;
+        }
+
+        public async Task<bool> UpdateEmployee(Employee employee)
+        {
+            if (employee != null)
+            {
+                var employeeDetails = await _unitOfWork.Employees.GetById(employee.Id);
+                if (employeeDetails != null)
+                {
+                    employeeDetails.EmployeeCode=employee.EmployeeCode;
+                    employeeDetails.FirstName = employee.FirstName;
+                    employeeDetails.LastName = employee.LastName;
+                    employeeDetails.EmailAddress = employee.EmailAddress;
+                    employeeDetails.MobileNumber = employee.MobileNumber;
+                    employeeDetails.DesignationId= employee.DesignationId;
+                    employeeDetails.DateOfJoining= employee.DateOfJoining;
+                    employeeDetails.Gender= employee.Gender;
+                    employeeDetails.CurrentAddress= employee.CurrentAddress;
+                    employeeDetails.PermanentAddress= employee.PermanentAddress;
+
+                    _unitOfWork.Employees.Update(employeeDetails);
+                    var result = _unitOfWork.Save();
+                    if (result > 0)
+                        return true;
+                    else
+                        return false;
+                }
+            }
+            return false;
+        }
     }
 }
