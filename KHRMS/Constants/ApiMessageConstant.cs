@@ -44,5 +44,14 @@
         public static readonly string HolidayNotUpdated = "Holiday is not deleted successfully";
         public static readonly string HolidayDeleted = "Holiday is deleted successfully";
         public static readonly string HolidayNotDeleted = "Holiday is not deleted successfully";
+
+        public static readonly string EmployeeFound = "Employee retrieved successfully";
+        public static readonly string NoEmployeeFound = "No Employee found!";
+        public static readonly string EmployeeAdded = "Employee saved successfully";
+        public static readonly string EmployeeNotAdded = "Employee is not saved syccessfully";
+        public static readonly string EmployeeUpdated = "Employee updated successfully";
+        public static readonly string EmployeeNotUpdated = "Employee is not deleted successfully";
+        public static readonly string EmployeeDeleted = "Employee is deleted successfully";
+        public static readonly string EmployeeNotDeleted = "Employee is not deleted successfully";
     }
 }
