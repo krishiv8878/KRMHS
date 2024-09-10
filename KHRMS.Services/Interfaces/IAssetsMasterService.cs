@@ -1,4 +1,4 @@
-﻿using KHRMS.Core.Models;
+﻿using KHRMS.Core;
 
 namespace KHRMS.Services.Interfaces
 {
