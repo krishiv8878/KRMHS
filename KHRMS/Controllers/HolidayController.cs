@@ -1,5 +1,4 @@
 ﻿using KHRMS.Constants;
-using KHRMS.Core;
 using KHRMS.Core.Models;
 using KHRMS.Infrastructure;
 using KHRMS.Services.Interfaces;
@@ -10,52 +9,52 @@ namespace KHRMS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CandidateController(ICandidateService candidateService) : ControllerBase
+    public class HolidayController(IHolidayService holidayService): ControllerBase
     {
-        public readonly ICandidateService _candidateService = candidateService;
-
+        private readonly IHolidayService _holidayService = holidayService;
         /// <summary>
-        /// Get the list of candidates
+        /// Get the list of Holidays
         /// </summary>
         /// <returns></returns>
+
         [HttpGet]
-        [Route("GetCandidates")]
-        public async Task<IActionResult> GetCandidates()
+        [Route("GetHolidays")]
+
+        public async Task<IActionResult> GetHolidays()
         {
-            var candidates = await _candidateService.GetAllCandidates();
-            if (candidates == null)
+            var holidays = await _holidayService.GetAllHolidays();
+            if(holidays == null)
             {
                 return NotFound();
             }
-            // Use the wrapper class to create a consistent response
-            var response = new ApiResponse<List<Candidate>>
+
+            var response = new ApiResponse<List<Holiday>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = candidates.Any() ? ApiMessageConstant.CandidateFound : ApiMessageConstant.NoCandidateFound,
-                Data = candidates.ToList()
+                Message = holidays.Any() ? ApiMessageConstant.HolidayFound : ApiMessageConstant.NoHolidayFound,
+                Data = holidays.ToList()
             };
             return Ok(response);
         }
 
-
         /// <summary>
-        /// Add a new candidate
+        /// Add a new Holiday
         /// </summary>
-        /// <param name="candidate"></param>
+        /// <param name="holiday"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("AddCandidate")]
-        public async Task<IActionResult> AddCandidate(Candidate candidate)
+        [Route("AddHoliday")]
+        public async Task<IActionResult> AddHoliday(Holiday holiday)
         {
-            var isCandidatedAdded = await _candidateService.CreateCandidate(candidate);
-            if (isCandidatedAdded)
+            var isHolidayAdded = await _holidayService.CreateHoliday(holiday);
+            if (isHolidayAdded)
             {
                 // Use the wrapper class to create a consistent response
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.CandidateAdded,
-                    Data = isCandidatedAdded
+                    Message = ApiMessageConstant.HolidayAdded,
+                    Data = isHolidayAdded
                 };
                 return Ok(response);
             }
@@ -64,31 +63,31 @@ namespace KHRMS.Controllers
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.CandidateNotAdded,
-                    Data = isCandidatedAdded
+                    Message = ApiMessageConstant.HolidayNotAdded,
+                    Data = isHolidayAdded
                 };
                 return BadRequest(response);
             }
         }
 
         /// <summary>
-        /// Update a existing candidate
+        /// Update a existing Holiday
         /// </summary>
-        /// <param name="candidate"></param>
+        /// <param name="holiday"></param>
         /// <returns></returns>
         [HttpPut]
-        [Route("UpdateCandidate")]
-        public async Task<IActionResult> UpdateCandidate(Candidate candidate)
+        [Route("UpdateHoliday")]
+        public async Task<IActionResult> UpdateHoliday(Holiday holiday)
         {
-            var isCandidatedEdited = await _candidateService.UpdateCandidate(candidate);
-            if (isCandidatedEdited)
+            var isHolidayEdited = await _holidayService.UpdateHoliday(holiday);
+            if (isHolidayEdited)
             {
                 // Use the wrapper class to create a consistent response
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.CandidateUpdated,
-                    Data = isCandidatedEdited
+                    Message = ApiMessageConstant.HolidayUpdated,
+                    Data = isHolidayEdited
                 };
                 return Ok(response);
             }
@@ -97,44 +96,44 @@ namespace KHRMS.Controllers
                 var response = new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.CandidateNotUpdated,
-                    Data = isCandidatedEdited
+                    Message = ApiMessageConstant.HolidayNotUpdated,
+                    Data = isHolidayEdited
+                };
+                return BadRequest(response);
+            }
+        }
+        /// <summary>
+        /// Delete existing holiday
+        /// </summary>
+        /// <param name="holiday"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("DeleteHoliday")]
+        public async Task<IActionResult> DeleteHoliday(long holidayId)
+        {
+            var isHolidayDeleted = await _holidayService.DeleteHoliday(holidayId);
+            if (isHolidayDeleted)
+            {
+                // Use the wrapper class to create a consistent response
+                var response = new ApiResponse<bool>
+                {
+                    StatusCode = (int)HttpStatusCode.OK,
+                    Message = ApiMessageConstant.HolidayDeleted,
+                    Data = isHolidayDeleted
+                };
+                return Ok(response);
+            }
+            else
+            {
+                var response = new ApiResponse<bool>
+                {
+                    StatusCode = (int)HttpStatusCode.BadRequest,
+                    Message = ApiMessageConstant.HolidayNotDeleted,
+                    Data = isHolidayDeleted
                 };
                 return BadRequest(response);
             }
         }
 
-        /// <summary>
-        /// Delete existing candidate
-        /// </summary>
-        /// <param name="candidate"></param>
-        /// <returns></returns>
-        [HttpDelete]
-        [Route("DeleteCandidate")]
-        public async Task<IActionResult> DeleteCandidate(long candidateId)
-        {
-            var isCandidatedDeleted = await _candidateService.DeleteCandidate(candidateId);
-            if (isCandidatedDeleted)
-            {
-                // Use the wrapper class to create a consistent response
-                var response = new ApiResponse<bool>
-                {
-                    StatusCode = (int)HttpStatusCode.OK,
-                    Message = ApiMessageConstant.CandidateDeleted,
-                    Data = isCandidatedDeleted
-                };
-                return Ok(response);
-            }
-            else
-            {
-                var response = new ApiResponse<bool>
-                {
-                    StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = ApiMessageConstant.CandidateNotDeleted,
-                    Data = isCandidatedDeleted
-                };
-                return BadRequest(response);
-            }
-        }
     }
 }
