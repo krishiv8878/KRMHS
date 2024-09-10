@@ -27,7 +27,7 @@ namespace KHRMS.Controllers
             var response = new ApiResponse<List<Designation>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = designations.Any() ? ApiMessageConstant.DesgnationFound : ApiMessageConstant.NoDesgnationFound,
+                Message = designations.Any() ? ApiMessageConstant.DesgnationFound : ApiMessageConstant.DesignationNotFound,
                 Data = designations.ToList()
             };
             return Ok(response);
