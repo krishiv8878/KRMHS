@@ -1,5 +1,5 @@
 ﻿using KHRMS.Core.Interfaces;
-using KHRMS.Core.Models;
+using KHRMS.Core;
 
 namespace KHRMS.Infrastructure.Repositories
 {

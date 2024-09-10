@@ -57,5 +57,17 @@
         public static readonly string EmployeeNotUpdated = "Employee is not deleted successfully";
         public static readonly string EmployeeDeleted = "Employee is deleted successfully";
         public static readonly string EmployeeNotDeleted = "Employee is not deleted successfully";
+
+        /// <summary>
+        /// This is AssetsMaster Messsages Consatant 
+        /// </summary>
+        public static readonly string AssetsMasterFound = "AssetsMaster retrieved successfully";
+        public static readonly string AssetsMasterAdded = "AssetsMaster saved successfully";
+        public static readonly string AssetsMasterNotAdded = "AssetsMaster is not saved syccessfully";
+        public static readonly string AssetsMasterUpdated = "AssetsMaster updated successfully";
+        public static readonly string AssetsMasterNotUpdated = "AssetsMaster is not updated successfully";
+        public static readonly string AssetsMasterDeleted = "AssetsMaster is deleted successfully";
+        public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted successfully";
+        public static readonly string AssetsMasterNotFound = "AssetsMaster Not Found";
     }
 }

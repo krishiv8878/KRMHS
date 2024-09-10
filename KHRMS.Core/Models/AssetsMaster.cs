@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace KHRMS.Core.Models
+namespace KHRMS.Core
 {
     public class AssetsMaster : KHRMSBase
     {

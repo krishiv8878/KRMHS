@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace KHRMS.Core.Models
+namespace KHRMS.Core
 {
     public class Designation : KHRMSBase
     {

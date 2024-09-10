@@ -1,10 +1,9 @@
 ﻿using KHRMS.Core;
-using KHRMS.Core.Models;
 using KHRMS.Services.Interfaces;
 
 namespace KHRMS.Services
-{ 
-    
+{
+
     public class SkillService(IUnitOfWork unitOfWork) : ISkillService
     {
         public IUnitOfWork _unitOfWork = unitOfWork;

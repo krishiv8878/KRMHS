@@ -9,7 +9,7 @@ namespace KHRMS.Core
         IDesignationRepository Designations { get; }
         IEmployeeRepository Employees { get; }
         IHolidayRepository Holidays { get; }
-
+        IAssetsMasterRepository AssetsMasters { get; }
         int Save();
     }
 }
