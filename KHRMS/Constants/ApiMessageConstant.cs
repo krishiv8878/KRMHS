@@ -24,6 +24,10 @@
         public static readonly string SkillDeleted = "Skill is deleted successfully";
         public static readonly string SkillNotDeleted = "Skill is not deleted successfully";
 
+
+        /// <summary>
+        /// This is Designation Messsages Consatant 
+        /// </summary>
         public static readonly string DesgnationFound = "Desgnation retrieved successfully";
         public static readonly string DesignationAdded = "Desgnation saved successfully";
         public static readonly string DesignationNotAdded = "Desgnation is not saved syccessfully";
@@ -31,7 +35,7 @@
         public static readonly string DesignationNotUpdated = "Desgnation is not updated successfully";
         public static readonly string DesignationDeleted = "Desgnation is deleted successfully";
         public static readonly string DesignationNotDeleted = "Desgnation is not deleted successfully";
-        public static string NoDesgnationFound = "No Skills found!";
+        public static readonly string DesignationNotFound = "Designation Not Found";
 
         /// <summary>
         /// This is Holiday Messsages Consatant 
