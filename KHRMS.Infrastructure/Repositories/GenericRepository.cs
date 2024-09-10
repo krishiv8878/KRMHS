@@ -12,7 +12,7 @@ namespace KHRMS.Infrastructure
             _dbContext = context;
         }
 
-        public async Task<T> GetById(long id)
+        public async Task<T> GetById(int id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
@@ -36,6 +36,5 @@ namespace KHRMS.Infrastructure
         {
             _dbContext.Set<T>().Update(entity);
         }
-
     }
 }

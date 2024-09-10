@@ -1,13 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-namespace KHRMS.Core
-{
-    public class Candidate : KHRMSBase
-    {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
 
+namespace KHRMS.Infrastructure
+{
+    public class CandidateRequest
+    {
         [StringLength(100)]
         [Required(ErrorMessage = "Candidate FirstName is required")]
         public string? FirstName { get; set; }
@@ -21,7 +17,7 @@ namespace KHRMS.Core
         [EmailAddress]
         public string? EmailAddress { get; set; }
 
-        [MaxLength(10)]
+        [StringLength(10)]
         [Required(ErrorMessage = "Candidate MobileNumber is required")]
         public string? MobileNumber { get; set; }
 

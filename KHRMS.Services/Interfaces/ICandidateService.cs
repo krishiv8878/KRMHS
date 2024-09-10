@@ -1,5 +1,4 @@
 ﻿using KHRMS.Core;
-using KHRMS.Core.Models;
 
 namespace KHRMS.Services.Interfaces
 {
@@ -8,7 +7,7 @@ namespace KHRMS.Services.Interfaces
         Task<bool> CreateCandidate(Candidate candidate);
         Task<IEnumerable<Candidate>> GetAllCandidates();
         Task<Candidate> GetCandidateById(int candidateId);
-        Task<bool> UpdateCandidate(Candidate candidate);
-        Task<bool> DeleteCandidate(long candidateId);
+        //Task<bool> UpdateCandidate(Candidate candidate);
+        Task<bool> DeleteCandidate(int candidateId);
     }
 }

@@ -1,5 +1,4 @@
 ﻿using KHRMS.Core;
-using KHRMS.Core.Models;
 using KHRMS.Services.Interfaces;
 
 namespace KHRMS.Services
@@ -11,7 +10,7 @@ namespace KHRMS.Services
         {
             if (candidate != null)
             {
-                candidate.CreatedDate = DateTime.Now;
+
                 await _unitOfWork.Candidates.Add(candidate);
 
                 var result = _unitOfWork.Save();
@@ -23,18 +22,16 @@ namespace KHRMS.Services
             }
             return false;
         }
-        public async Task<bool> DeleteCandidate(long candidateId)
+        public async Task<bool> DeleteCandidate(int candidateId)
         {
             if (candidateId > 0)
             {
                 var candidateDetails = await _unitOfWork.Candidates.GetById(candidateId);
                 if (candidateDetails != null)
                 {
-                    candidateDetails.IsDeleted = true;
-                    candidateDetails.IsActive = false;
-                    
-                    _unitOfWork.Candidates.Update(candidateDetails);
+                    _unitOfWork.Candidates.Delete(candidateDetails);
                     var result = _unitOfWork.Save();
+
                     if (result > 0)
                         return true;
                     else
@@ -48,7 +45,7 @@ namespace KHRMS.Services
             var candidates = await _unitOfWork.Candidates.GetAll();
             return candidates;
         }
-        public async Task<Candidate?> GetCandidateById(int candidateId)
+        public async Task<Candidate> GetCandidateById(int candidateId)
         {
             if (candidateId > 0)
             {
@@ -60,33 +57,9 @@ namespace KHRMS.Services
             }
             return null;
         }
-        public async Task<bool> UpdateCandidate(Candidate candidate)
-        {
-            if (candidate != null)
-            {
-                var candidateDetails = await _unitOfWork.Candidates.GetById(candidate.Id);
-                if (candidateDetails != null)
-                {
-                    candidateDetails.FirstName = candidate.FirstName;
-                    candidateDetails.LastName = candidate.LastName;
-                    candidateDetails.EmailAddress = candidate.EmailAddress;
-                    candidateDetails.MobileNumber = candidate.MobileNumber;
-                    candidateDetails.CurrentSalary = candidate.CurrentSalary;
-                    candidateDetails.ExpectedSalary = candidate.ExpectedSalary;
-                    candidateDetails.TotalExperience = candidate.TotalExperience;
-                    candidateDetails.RelevantExperience = candidate.RelevantExperience;
-                    candidateDetails.NoticePeriod = candidate.NoticePeriod;
-                    candidateDetails.UpdatedDate = DateTime.Now;
-
-                    _unitOfWork.Candidates.Update(candidateDetails);
-                    var result = _unitOfWork.Save();
-                    if (result > 0)
-                        return true;
-                    else
-                        return false;
-                }
-            }
-            return false;
-        }
+        //public async Task<bool> UpdateCandidate(Candidate candidate)
+        //{
+        //    throw NotImplementedException();
+        //}
     }
 }

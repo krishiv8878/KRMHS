@@ -2,8 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using KHRMS.Core.Interfaces;
-using KHRMS.Infrastructure.Repositories;
 
 namespace KHRMS.Infrastructure
 {
@@ -17,11 +15,6 @@ namespace KHRMS.Infrastructure
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICandidateRepository, CandidateRepository>();
-            services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<IDesignationRepository, DesignationRepository>();
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-            services.AddScoped<IHolidayRepository, HolidayRepository>();
-            services.AddScoped<IAssetsMasterRepository, AssetsMasterRepository>();
 
             return services;
         }
