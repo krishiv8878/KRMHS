@@ -17,5 +17,7 @@ namespace KHRMS.Infrastructure
         public DbSet<AssetsMaster> Assets { get; set; }
         public DbSet<LeaveType> LeaveType { get; set; }
 
+
+
     }
 }
