@@ -9,7 +9,9 @@ namespace KHRMS.Core
         IDesignationRepository Designations { get; }
         IEmployeeRepository Employees { get; }
         IHolidayRepository Holidays { get; }
+        ILeaveRepository LeaveType { get; }
         IAssetsMasterRepository AssetsMasters { get; }
+
         int Save();
     }
 }

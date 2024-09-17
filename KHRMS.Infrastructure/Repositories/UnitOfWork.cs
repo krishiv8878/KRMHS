@@ -15,14 +15,16 @@ namespace KHRMS.Infrastructure
 
         public IEmployeeRepository Employees { get; }
 
+        public ILeaveRepository LeaveType {  get; }
+
         public IAssetsMasterRepository AssetsMasters { get; }
+
         public UnitOfWork(KHRMSContextClass dbContext,
                             ICandidateRepository candidateRepository,
                             ISkillRepository skillRepository,
                             IDesignationRepository designationRepository,
                             IHolidayRepository holidayRepository,
-                            IEmployeeRepository employeesRepository,
-                            IAssetsMasterRepository assetsMasterRepository )
+                            IEmployeeRepository employeesRepository, IAssetsMasterRepository assetsMasterRepository, ILeaveRepository leaveRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
@@ -31,6 +33,7 @@ namespace KHRMS.Infrastructure
             Employees = employeesRepository;
             Holidays = holidayRepository;
             AssetsMasters = assetsMasterRepository;
+            LeaveType = leaveRepository;
         }
 
         public int Save()
