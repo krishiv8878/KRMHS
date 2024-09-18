@@ -1,11 +1,10 @@
-﻿using KHRMS.Constants;
-using KHRMS.Core;
+﻿using KHRMS.Core;
 using KHRMS.Infrastructure;
-using KHRMS.Services.Interfaces;
+using KHRMS.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace KHRMS.Controllers
+namespace KHRMS
 {
     [Route("api/[controller]")]
     [ApiController]

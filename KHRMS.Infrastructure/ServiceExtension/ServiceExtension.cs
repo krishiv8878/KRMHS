@@ -2,8 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using KHRMS.Core.Interfaces;
-using KHRMS.Infrastructure.Repositories;
 
 namespace KHRMS.Infrastructure
 {

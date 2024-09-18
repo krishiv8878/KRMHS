@@ -1,6 +1,4 @@
-﻿using KHRMS.Core.Interfaces;
-
-namespace KHRMS.Core
+﻿namespace KHRMS.Core
 {
     public interface IUnitOfWork : IDisposable
     {

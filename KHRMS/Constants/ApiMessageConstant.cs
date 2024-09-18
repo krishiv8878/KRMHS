@@ -1,4 +1,4 @@
-﻿namespace KHRMS.Constants
+﻿namespace KHRMS
 {
     public static class ApiMessageConstant
     {

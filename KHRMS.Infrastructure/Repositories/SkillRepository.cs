@@ -1,7 +1,6 @@
-﻿using KHRMS.Core.Interfaces;
-using KHRMS.Core;
+﻿using KHRMS.Core;
 
-namespace KHRMS.Infrastructure.Repositories
+namespace KHRMS.Infrastructure
 {
     public class SkillRepository : GenericRepository<Skill>, ISkillRepository
     {

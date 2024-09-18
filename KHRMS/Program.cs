@@ -1,5 +1,4 @@
 ﻿using KHRMS.Services;
-using KHRMS.Services.Interfaces;
 using KHRMS.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
