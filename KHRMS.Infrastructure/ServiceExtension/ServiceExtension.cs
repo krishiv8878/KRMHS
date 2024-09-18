@@ -21,6 +21,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<IHolidayRepository, HolidayRepository>();
             services.AddScoped<IAssetsMasterRepository, AssetsMasterRepository>();
             services.AddScoped<ILeaveRepository, LeaveRepository>();
+            services.AddScoped<IUserLoginRepository, UserLoginRepository>();
 
             return services;
         }
