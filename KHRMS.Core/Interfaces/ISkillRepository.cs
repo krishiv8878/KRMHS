@@ -1,6 +1,6 @@
 ﻿using KHRMS.Core;
 
-namespace KHRMS.Core.Interfaces
+namespace KHRMS.Core
 {
     public interface ISkillRepository : IGenericRepository<Skill>
     {

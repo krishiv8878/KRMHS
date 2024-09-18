@@ -1,7 +1,6 @@
 ﻿using KHRMS.Core;
-using KHRMS.Core.Interfaces;
 
-namespace KHRMS.Infrastructure.Repositories
+namespace KHRMS.Infrastructure
 {
     public class DesignationRepository : GenericRepository<Designation>, IDesignationRepository
     {

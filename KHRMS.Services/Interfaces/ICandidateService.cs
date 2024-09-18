@@ -1,6 +1,6 @@
 ﻿using KHRMS.Core;
 
-namespace KHRMS.Services.Interfaces
+namespace KHRMS.Services
 {
     public interface ICandidateService
     {
