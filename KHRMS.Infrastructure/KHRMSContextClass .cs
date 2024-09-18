@@ -18,6 +18,7 @@ namespace KHRMS.Infrastructure
         public DbSet<LeaveType> LeaveType { get; set; }
 
 
+        public DbSet<UserLogin> UserLogins { get; set; }
 
     }
 }

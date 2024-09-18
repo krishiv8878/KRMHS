@@ -10,6 +10,7 @@
         ILeaveRepository LeaveType { get; }
         IAssetsMasterRepository AssetsMasters { get; }
 
+        IUserLoginRepository UserLogins { get; }
         int Save();
     }
 }
