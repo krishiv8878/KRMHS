@@ -14,8 +14,6 @@ namespace KHRMS.Core
         [Required(ErrorMessage = "DesignationName is required")]
         public string? DesignationName { get; set; }
 
-        public bool? IsActive { get; set; }
-
-        public bool? IsDeleted { get; set; }
+        
     }
 }

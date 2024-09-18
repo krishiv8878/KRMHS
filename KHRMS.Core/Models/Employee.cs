@@ -45,8 +45,7 @@ namespace KHRMS.Core
         [Required(ErrorMessage = " Employee PermanentAddress is required")]
         public string? PermanentAddress { get; set; }
 
-        public bool IsActive { get; set; }
-        public bool IsDeleted { get; set; }
+     
 
     }
 

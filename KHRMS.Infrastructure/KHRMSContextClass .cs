@@ -14,6 +14,10 @@ namespace KHRMS.Infrastructure
         public DbSet<Designation> Designations { get; set; }
         public DbSet<Holiday> Holidays { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<AssetsMaster> Assets { get; set; }
+        public DbSet<LeaveType> LeaveType { get; set; }
+
+
 
     }
 }

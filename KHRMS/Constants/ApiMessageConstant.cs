@@ -49,6 +49,9 @@
         public static readonly string HolidayDeleted = "Holiday is deleted successfully";
         public static readonly string HolidayNotDeleted = "Holiday is not deleted successfully";
 
+        ///<summery>
+        ///This is Employee Message constant
+        ///</summery>
         public static readonly string EmployeeFound = "Employee retrieved successfully";
         public static readonly string NoEmployeeFound = "No Employee found!";
         public static readonly string EmployeeAdded = "Employee saved successfully";
@@ -58,16 +61,30 @@
         public static readonly string EmployeeDeleted = "Employee is deleted successfully";
         public static readonly string EmployeeNotDeleted = "Employee is not deleted successfully";
 
-        /// <summary>
-        /// This is AssetsMaster Messsages Consatant 
-        /// </summary>
+        ///<summery>
+        ///This is AssetsMaster Message constant
+        ///</summery>
         public static readonly string AssetsMasterFound = "AssetsMaster retrieved successfully";
+        public static readonly string AssetsMasterNotFound = "No AssetsMaster found!";
         public static readonly string AssetsMasterAdded = "AssetsMaster saved successfully";
         public static readonly string AssetsMasterNotAdded = "AssetsMaster is not saved syccessfully";
         public static readonly string AssetsMasterUpdated = "AssetsMaster updated successfully";
-        public static readonly string AssetsMasterNotUpdated = "AssetsMaster is not updated successfully";
+        public static readonly string AssetsMasterNotUpdated = "AssetsMaster is not Updated..";
         public static readonly string AssetsMasterDeleted = "AssetsMaster is deleted successfully";
-        public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted successfully";
-        public static readonly string AssetsMasterNotFound = "AssetsMaster Not Found";
+        public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted..";
+
+        ///<summery>
+        ///This is LeaveType Message constant
+        ///</summery>
+        public static readonly string LeaveTypeFound = "LeaveType retrieved successfully";
+        public static readonly string LeaveTypeNotFound = "No LeaveType found!";
+        public static readonly string LeaveTypeAdded = "LeaveType saved successfully";
+        public static readonly string LeaveTypeNotAdded = "LeaveType is not saved syccessfully";
+        public static readonly string LeaveTypeUpdated = "LeaveType updated successfully";
+        public static readonly string LeaveTypeNotUpdated = "LeaveType is not Updated...";
+        public static readonly string LeaveTypeDeleted = "LeaveType is deleted successfully";
+        public static readonly string LeaveTypeNotDeleted = "LeaveType is not deleted..";
+
+
     }
 }
