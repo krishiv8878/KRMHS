@@ -72,7 +72,6 @@
         public static readonly string AssetsMasterNotUpdated = "AssetsMaster is not Updated..";
         public static readonly string AssetsMasterDeleted = "AssetsMaster is deleted successfully";
         public static readonly string AssetsMasterNotDeleted = "AssetsMaster is not deleted successfully";
-        public static readonly string AssetsMasterNotFound = "AssetsMaster Not Found";
 
         /// <summary>
         /// This is UserLogin Messsages Consatant 
@@ -81,5 +80,17 @@
 
         public static readonly string UserLoginByIdAdded = "UserLogin saved successfully";
         public static readonly string UserLoginByIdNotAdded = "UserLogin is not deleted successfully";
+
+        ///<summery>
+        ///This is LeaveType Message constant
+        ///</summery>
+        public static readonly string LeaveTypeFound = "LeaveType retrieved successfully";
+        public static readonly string LeaveTypeNotFound = "No LeaveType found!";
+        public static readonly string LeaveTypeAdded = "LeaveType saved successfully";
+        public static readonly string LeaveTypeNotAdded = "LeaveType is not saved syccessfully";
+        public static readonly string LeaveTypeUpdated = "LeaveType updated successfully";
+        public static readonly string LeaveTypeNotUpdated = "LeaveType is not Updated...";
+        public static readonly string LeaveTypeDeleted = "LeaveType is deleted successfully";
+        public static readonly string LeaveTypeNotDeleted = "LeaveType is not deleted..";
     }
 }

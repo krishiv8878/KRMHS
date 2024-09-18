@@ -14,7 +14,7 @@ namespace KHRMS.Infrastructure
 
         public IEmployeeRepository Employees { get; }
 
-        public ILeaveRepository LeaveType {  get; }
+        public ILeaveRepository LeaveType { get; }
 
         public IAssetsMasterRepository AssetsMasters { get; }
 
@@ -26,7 +26,7 @@ namespace KHRMS.Infrastructure
                             IHolidayRepository holidayRepository,
                             IEmployeeRepository employeesRepository,
                             IAssetsMasterRepository assetsMasterRepository,
-                            ILeaveRepository leaveRepository)
+                            ILeaveRepository leaveRepository,
                             IUserLoginRepository userLoginRepository)
         {
             _dbContext = dbContext;
