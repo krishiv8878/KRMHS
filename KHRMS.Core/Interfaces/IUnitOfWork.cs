@@ -9,8 +9,10 @@
         IHolidayRepository Holidays { get; }
         ILeaveRepository LeaveType { get; }
         IAssetsMasterRepository AssetsMasters { get; }
-
         IUserLoginRepository UserLogins { get; }
+        IProjectMasterRepository ProjectMasters { get; }
+
+
         int Save();
     }
 }
