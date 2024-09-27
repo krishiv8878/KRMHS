@@ -19,6 +19,8 @@ namespace KHRMS.Infrastructure
         public IAssetsMasterRepository AssetsMasters { get; }
 
         public IUserLoginRepository UserLogins { get; }
+
+        public IProjectMasterRepository ProjectMasters { get; }
         public UnitOfWork(KHRMSContextClass dbContext,
                             ICandidateRepository candidateRepository,
                             ISkillRepository skillRepository,
@@ -27,7 +29,8 @@ namespace KHRMS.Infrastructure
                             IEmployeeRepository employeesRepository,
                             IAssetsMasterRepository assetsMasterRepository,
                             ILeaveRepository leaveRepository,
-                            IUserLoginRepository userLoginRepository)
+                            IUserLoginRepository userLoginRepository,
+                            IProjectMasterRepository projectMasters)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
@@ -38,6 +41,7 @@ namespace KHRMS.Infrastructure
             AssetsMasters = assetsMasterRepository;
             LeaveType = leaveRepository;
             UserLogins = userLoginRepository;
+            ProjectMasters = projectMasters;
         }
 
         public int Save()

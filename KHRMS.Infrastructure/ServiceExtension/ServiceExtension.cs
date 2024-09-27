@@ -22,6 +22,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<IAssetsMasterRepository, AssetsMasterRepository>();
             services.AddScoped<ILeaveRepository, LeaveRepository>();
             services.AddScoped<IUserLoginRepository, UserLoginRepository>();
+            services.AddScoped<IProjectMasterRepository, ProjectMasterRepository>();
 
             return services;
         }

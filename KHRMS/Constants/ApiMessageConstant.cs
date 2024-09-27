@@ -92,5 +92,18 @@
         public static readonly string LeaveTypeNotUpdated = "LeaveType is not Updated...";
         public static readonly string LeaveTypeDeleted = "LeaveType is deleted successfully";
         public static readonly string LeaveTypeNotDeleted = "LeaveType is not deleted..";
+
+
+        ///<summery>
+        ///This is ProjectMaster Message constant
+        ///</summery>
+        public static readonly string ProjectMasterFound = "ProjectMaster retrieved successfully";
+        public static readonly string ProjectMasterNotFound = "No ProjectMaster found!";
+        public static readonly string ProjectMasterAdded = "ProjectMaster saved successfully";
+        public static readonly string ProjectMasterNotAdded = "ProjectMaster is not saved syccessfully";
+        public static readonly string ProjectMasterUpdated = "ProjectMaster updated successfully";
+        public static readonly string ProjectMasterNotUpdated = "ProjectMaster is not Updated...";
+        public static readonly string ProjectMasterDeleted = "ProjectMaster is deleted successfully";
+        public static readonly string ProjectMasterNotDeleted = "ProjectMaster is not deleted..";
     }
 }
