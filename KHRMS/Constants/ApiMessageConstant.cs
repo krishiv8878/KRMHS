@@ -79,7 +79,7 @@
 
 
         public static readonly string UserLoginByIdAdded = "UserLogin saved successfully";
-        public static readonly string UserLoginByIdNotAdded = "UserLogin is not deleted successfully";
+        public static readonly string UserLoginByIdNotAdded = "UserLogin is not Added successfully";
 
         ///<summery>
         ///This is LeaveType Message constant
@@ -105,5 +105,12 @@
         public static readonly string ProjectMasterNotUpdated = "ProjectMaster is not Updated...";
         public static readonly string ProjectMasterDeleted = "ProjectMaster is deleted successfully";
         public static readonly string ProjectMasterNotDeleted = "ProjectMaster is not deleted..";
+
+
+        ///<summery>
+        ///This is RegistrationUser Message constant
+        ///</summery>
+        public static readonly string RegistrationUserAdded = "UserRegistration saved successfully";
+        public static readonly string RegistrationUserNotAdded = "UserRegistration is not saved successfully";
     }
 }
