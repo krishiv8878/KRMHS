@@ -11,6 +11,7 @@
         IAssetsMasterRepository AssetsMasters { get; }
         IUserLoginRepository UserLogins { get; }
         IProjectMasterRepository ProjectMasters { get; }
+        IUserRegistrationRepository UserRegistrations { get; }
 
 
         int Save();

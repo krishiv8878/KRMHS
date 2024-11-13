@@ -6,7 +6,6 @@ namespace KHRMS.Services
     public class UserLoginService(IUnitOfWork unitOfWork) : IUserLoginService
     {
         public IUnitOfWork _unitOfWork = unitOfWork;
-
         public async Task<bool> GetUserLoginById(string email, string password)
         {
             var allUsers = await _unitOfWork.UserLogins.GetAll();
