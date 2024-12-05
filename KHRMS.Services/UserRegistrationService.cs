@@ -23,7 +23,7 @@ namespace KHRMS.Services
             return isUserRegistered;
         }
 
-        private async Task<bool> AddUserLogin(UserRegistration userRegistration)
+        public async Task<bool> AddUserLogin(UserRegistration userRegistration)
         {
             UserLogin userLogin = new()
             {
