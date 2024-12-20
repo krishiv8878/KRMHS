@@ -1,14 +1,7 @@
-﻿using Castle.Components.DictionaryAdapter.Xml;
-using FluentAssertions.Common;
-using KHRMS.Controllers;
-using KHRMS.Core;
+﻿using KHRMS.Core;
 using KHRMS.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Moq;
 using NPOI.SS.Formula.Functions;
-using System.Linq;
-using System.Xml.Linq;
 
 namespace KHRMS.UnitTest
 {
