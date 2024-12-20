@@ -1,14 +1,7 @@
-﻿using FluentAssertions.Common;
-using KHRMS.Controllers;
+﻿using KHRMS.Controllers;
 using KHRMS.Core;
 using KHRMS.Services;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KHRMS.UnitTest.ControllerTests
 {
