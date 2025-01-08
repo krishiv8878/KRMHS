@@ -14,7 +14,7 @@ namespace KHRMS.Core
         public string? HolidayName { get; set; }
 
         [Required(ErrorMessage = "Description is required")]
-        public DateTime Description { get; set; }
+        public String Description { get; set; }
         public bool IsOptional { get; set; }
 
     }
