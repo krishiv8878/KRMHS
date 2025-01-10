@@ -15,7 +15,7 @@ namespace KHRMS.Core
 
   
         [Required(ErrorMessage = "Description is required")]
-        public DateTime? Description { get; set; }
+        public String? Description { get; set; }
 
         [StringLength(100)]
         [Required(ErrorMessage = "ClientName is required")]

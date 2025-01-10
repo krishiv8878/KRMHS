@@ -16,7 +16,7 @@ namespace KHRMS.Core
 
 
         [Required(ErrorMessage = "AssetsMaster Description is required")]
-        public DateTime? Description { get; set; }
+        public String? Description { get; set; }
 
         [Required(ErrorMessage = "SerialNumber IS required ")]
         public string? SerialNumber { get; set; }
