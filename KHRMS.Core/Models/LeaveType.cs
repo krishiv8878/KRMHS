@@ -10,20 +10,17 @@ namespace KHRMS.Core
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
 
-
         [StringLength(100)]
         [Required(ErrorMessage = "LeaveName is required")]
-        public string? leaveName { get; set; }
+        public string? LeaveName { get; set; }
 
         [StringLength(100)]
         [Required(ErrorMessage = "LeaveType is required")]
-        public string? leaveType { get; set; }
+        public string? Type { get; set; }
 
         [StringLength(100)]
         [Required(ErrorMessage = "Leave Description is required")]
         public string? Description { get; set; }
-
-
 
     }
 }
