@@ -71,6 +71,7 @@ namespace KHRMS.Services
                 if (designationDetails != null)
                 {
                     designationDetails.DesignationName = designation.DesignationName;
+                    designationDetails.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.Designations.Update(designationDetails);
                     var result = _unitOfWork.Save();

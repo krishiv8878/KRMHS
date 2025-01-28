@@ -76,6 +76,7 @@ namespace KHRMS.Services
                     projectDetail.Description = projectMaster.Description;
                     projectDetail.ClientName = projectMaster.ClientName;    
                     projectDetail.ClientRegion = projectMaster.ClientRegion;
+                    projectDetail.UpdatedDate = DateTime.Now;   
 
                     _unitOfWork.ProjectMasters.Update(projectDetail);
                     var result = _unitOfWork.Save();

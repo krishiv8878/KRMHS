@@ -71,6 +71,7 @@ namespace KHRMS.Services
                 if(skillDetails != null)
                 {
                     skillDetails.SkillName = skill.SkillName;
+                    skillDetails.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.Skills.Update(skillDetails);
                     var result = _unitOfWork.Save();

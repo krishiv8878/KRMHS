@@ -71,6 +71,7 @@ namespace KHRMS.Services
                 {
                     assetsMasterDetail.AssetsMasterName = assetsMaster.AssetsMasterName;
                     assetsMasterDetail.Description = assetsMaster.Description;
+                    assetsMasterDetail.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.AssetsMasters.Update(assetsMasterDetail);
                     var result = _unitOfWork.Save();
