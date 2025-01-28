@@ -80,6 +80,7 @@ namespace KHRMS.Services
                     employeeDetails.Gender= employee.Gender;
                     employeeDetails.CurrentAddress= employee.CurrentAddress;
                     employeeDetails.PermanentAddress= employee.PermanentAddress;
+                    employeeDetails.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.Employees.Update(employeeDetails);
                     var result = _unitOfWork.Save();

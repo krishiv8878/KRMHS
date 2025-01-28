@@ -71,6 +71,7 @@ namespace KHRMS.Services
                 {
                     holidayDetails.HolidayName = holiday.HolidayName;
                     holidayDetails.Description = holiday.Description;
+                    holidayDetails.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.Holidays.Update(holidayDetails);
                     var result = _unitOfWork.Save();

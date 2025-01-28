@@ -74,6 +74,8 @@ namespace KHRMS.Services
                 {
                     leaveTypeDetail.LeaveName = leaveType.LeaveName;
                     leaveTypeDetail.Description = leaveType.Description;
+                    leaveTypeDetail.Type = leaveType.Type;
+                    leaveTypeDetail.UpdatedDate = DateTime.Now;
 
                     _unitOfWork.LeaveType.Update(leaveTypeDetail);
                     var result = _unitOfWork.Save();
