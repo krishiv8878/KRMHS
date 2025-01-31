@@ -13,6 +13,9 @@
         IProjectMasterRepository ProjectMasters { get; }
         IUserRegistrationRepository UserRegistrations { get; }
 
+        IEmployeeRoleMappingRepository EmployeeRoleMappings { get; }
+        IRoleMasterRepository RoleMaster { get; }
+
 
         int Save();
     }
