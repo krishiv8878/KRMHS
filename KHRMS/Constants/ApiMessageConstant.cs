@@ -106,6 +106,31 @@
         public static readonly string ProjectMasterDeleted = "ProjectMaster is deleted successfully";
         public static readonly string ProjectMasterNotDeleted = "ProjectMaster is not deleted..";
 
+        /// <summary>
+        /// This is RoleMaster Message constant
+        /// </summary>
+        public static readonly string RoleMasterFound = "RoleMaster retrived successfully";
+        public static readonly string NoRoleMasterFound = "No RoleMaster found!";
+        public static readonly string RoleMasterAdded = "RoleMaster saved successfully";
+        public static readonly string RoleMasterNotAdded = "RoleMaster is not saved syccessfully";
+        public static readonly string RoleMasterUpdated = "RoleMaster updated successfully";
+        public static readonly string RoleMasterNotUpdated = "RoleMaster is not Updated...";
+        public static readonly string RoleMasterDeleted = "RoleMaster is deleted successfully";
+        public static readonly string RoleMasterNotDeleted = "RoleMaster is not deleted..";
+
+        /// <summary>
+        /// This is EmployeeRoleMapping Message constant
+        /// </summary>
+
+        public static readonly string EmployeeRoleMapping = "EmployeeRoleMapping retrived successfully";
+        public static readonly string NoEmployeeRoleMappingFound = "No EmployeeRoleMapping found!";
+        public static readonly string EmployeeRoleMappingAdded = "EmployeeRoleMapping saved successfully";
+        public static readonly string EmployeeRoleMappingNotAdded = "EmployeeRoleMapping is not saved syccessfully";
+        public static readonly string EmployeeRoleMappingUpdated = "EmployeeRoleMapping updated successfully";
+        public static readonly string EmployeeRoleMappingNotUpdated = "EmployeeRoleMapping is not Updated...";
+        public static readonly string EmployeeRoleMappingDeleted = "EmployeeRoleMapping is deleted successfully";
+        public static readonly string EmployeeRoleMappingNotDeleted = "EmployeeRoleMapping is not deleted..";
+
 
         ///<summery>
         ///This is RegistrationUser Message constant

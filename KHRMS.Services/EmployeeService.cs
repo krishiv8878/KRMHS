@@ -11,6 +11,7 @@ namespace KHRMS.Services
             if (employee != null)
             {
              
+                employee.UpdatedDate = DateTime.Now;
                 await _unitOfWork.Employees.Add(employee);
 
                 var result = _unitOfWork.Save();

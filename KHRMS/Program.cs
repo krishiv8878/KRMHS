@@ -16,6 +16,8 @@ builder.Services.AddScoped<ILeaveTypeService, LeaveTypeService>();
 builder.Services.AddScoped<IUserLoginService, UserLoginService>();
 builder.Services.AddScoped<IProjectMasterService, ProjectMasterService>();
 builder.Services.AddScoped<IUserRegistrationService, UserRegistrationService>();
+builder.Services.AddScoped<IRoleMasterService, RoleMasterService>();
+builder.Services.AddScoped<IEmployeeRoleMappingService, EmployeeRoleMappingService>();
 builder.Services.AddControllers(); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

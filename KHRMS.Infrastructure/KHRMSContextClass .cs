@@ -1,5 +1,6 @@
 ﻿using KHRMS.Core;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace KHRMS.Infrastructure
 {
@@ -19,5 +20,7 @@ namespace KHRMS.Infrastructure
         public DbSet<UserLogin> UserLogins { get; set; }
         public DbSet<ProjectMaster> ProjectMasters { get; set; }
         public DbSet<UserRegistration> UserRegistrations { get; set; }
+        public DbSet<RoleMaster> RoleMasters { get; set; }
+        public DbSet<EmployeeRoleMapping> EmployeeRoleMappings { get; set; }
     }
 }
