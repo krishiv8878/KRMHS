@@ -10,7 +10,7 @@ namespace KHRMS.Core
         public long Id { get; set; }
 
         [StringLength(100)]
-        [Required(ErrorMessage = "AssetsMasterName is required")]
+        [Required(ErrorMessage = "RoleName is required")]
         public string? RoleName { get; set; }
     }
 }
