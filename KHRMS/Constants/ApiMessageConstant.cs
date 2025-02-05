@@ -137,5 +137,17 @@
         ///</summery>
         public static readonly string RegistrationUserAdded = "UserRegistration saved successfully";
         public static readonly string RegistrationUserNotAdded = "UserRegistration is not saved successfully";
+
+        /// <summary>
+        /// This is Attendance request Message constant
+        /// </summary>
+        public const string AttendanceRequestsFound = "Attendance requests retrieved successfully.";
+        public const string AttendanceRequestsNotFound = "No attendance requests found.";
+        public const string AttendanceRequestFound = "Attendance request found.";
+        public const string AttendanceRequestNotFound = "Attendance request not found.";
+        public const string AttendanceRequestAdded = "Attendance request added successfully.";
+        public const string AttendanceRequestUpdated = "Attendance request updated successfully.";
+        public const string AttendanceRequestDeleted = "Attendance request deleted successfully.";
+        public const string InvalidData = "Invalid data provided.";
     }
 }

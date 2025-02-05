@@ -7,5 +7,7 @@
         Task Add(T entity);
         void Delete(T entity);
         void Update(T entity);
+        Task DeleteAsync(long id);
+       
     }
 }

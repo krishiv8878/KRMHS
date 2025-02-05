@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\KHRMS.Core\\Interfaces",
+    "\\KHRMS.Core\\Models",
+    "\\KHRMS.Infrastructure",
+    "\\KHRMS.Services"
+  ],
+  "PreviewInSolutionExplorer": false
+}
