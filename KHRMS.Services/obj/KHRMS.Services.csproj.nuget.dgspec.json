@@ -10,11 +10,15 @@
         "projectUniqueName": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj",
         "projectName": "KHRMS.Core",
         "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj",
-        "packagesPath": "C:\\Users\\dmin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,11 +69,15 @@
         "projectUniqueName": "C:\\KHRMS\\KHRMS\\KHRMS.Infrastructure\\KHRMS.Infrastructure.csproj",
         "projectName": "KHRMS.Infrastructure",
         "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Infrastructure\\KHRMS.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\dmin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "C:\\KHRMS\\KHRMS\\KHRMS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,6 +107,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -140,11 +152,15 @@
         "projectUniqueName": "C:\\KHRMS\\KHRMS\\KHRMS.Services\\KHRMS.Services.csproj",
         "projectName": "KHRMS.Services",
         "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Services\\KHRMS.Services.csproj",
-        "packagesPath": "C:\\Users\\dmin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "C:\\KHRMS\\KHRMS\\KHRMS.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

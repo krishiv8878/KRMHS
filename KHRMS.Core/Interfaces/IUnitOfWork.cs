@@ -16,6 +16,7 @@
         IEmployeeRoleMappingRepository EmployeeRoleMappings { get; }
         IRoleMasterRepository RoleMaster { get; }
 
+        IAttendanceRequestRepository AttendanceRequests { get; }
 
         int Save();
     }

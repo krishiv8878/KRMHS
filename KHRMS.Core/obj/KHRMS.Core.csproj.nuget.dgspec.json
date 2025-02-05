@@ -10,11 +10,15 @@
         "projectUniqueName": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj",
         "projectName": "KHRMS.Core",
         "projectPath": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\KHRMS.Core.csproj",
-        "packagesPath": "C:\\Users\\dmin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "C:\\KHRMS\\KHRMS\\KHRMS.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

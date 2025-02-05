@@ -36,5 +36,14 @@ namespace KHRMS.Infrastructure
         {
             _dbContext.Set<T>().Update(entity);
         }
+
+        public async Task DeleteAsync(long id)
+        {
+            var attendanceRequest = await _dbContext.AttendanceRequests.FindAsync(id);
+            if (attendanceRequest != null)
+            {
+                _dbContext.AttendanceRequests.Remove(attendanceRequest);
+            }
+        }
     }
 }
