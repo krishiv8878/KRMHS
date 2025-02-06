@@ -22,5 +22,6 @@ namespace KHRMS.Infrastructure
         public DbSet<RoleMaster> RoleMasters { get; set; }
         public DbSet<EmployeeRoleMapping> EmployeeRoleMappings { get; set; }
         public DbSet<AttendanceRequest> AttendanceRequests { get; set; }
+        public DbSet<EmployeeAttendance> EmployeeAttendances { get; set; }
     }
 }

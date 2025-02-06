@@ -27,6 +27,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<IEmployeeRoleMappingRepository, EmployeeRoleMappingRepository>();
             services.AddScoped<IRoleMasterRepository, RoleMasterRepository>();
             services.AddScoped<IAttendanceRequestRepository, AttendanceRequestRepository>();
+            services.AddScoped<IEmployeeAttendanceRepository, EmployeeAttendanceRepository>();
             return services;
         }
     }

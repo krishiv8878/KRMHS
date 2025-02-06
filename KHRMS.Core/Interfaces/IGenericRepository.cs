@@ -8,6 +8,9 @@
         void Delete(T entity);
         void Update(T entity);
         Task DeleteAsync(long id);
-       
+        Task<T> GetByEmployeeIdAsync(long employeeId);
+
+        Task<T> GetByIdAsync(long id);
+
     }
 }

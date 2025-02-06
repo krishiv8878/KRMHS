@@ -16,7 +16,7 @@ namespace KHRMS.Infrastructure
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
-
+      
         public async Task<IEnumerable<T>> GetAll()
         {
             return await _dbContext.Set<T>().ToListAsync();
@@ -44,6 +44,15 @@ namespace KHRMS.Infrastructure
             {
                 _dbContext.AttendanceRequests.Remove(attendanceRequest);
             }
+        }
+
+        public async Task<T> GetByIdAsync(long id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
+        }
+        public async Task<T> GetByEmployeeIdAsync(long id)
+        {
+            return await _dbContext.Set<T>().FindAsync(id);
         }
     }
 }

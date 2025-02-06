@@ -141,13 +141,13 @@
         /// <summary>
         /// This is Attendance request Message constant
         /// </summary>
-        public const string AttendanceRequestsFound = "Attendance requests retrieved successfully.";
-        public const string AttendanceRequestsNotFound = "No attendance requests found.";
-        public const string AttendanceRequestFound = "Attendance request found.";
-        public const string AttendanceRequestNotFound = "Attendance request not found.";
-        public const string AttendanceRequestAdded = "Attendance request added successfully.";
-        public const string AttendanceRequestUpdated = "Attendance request updated successfully.";
-        public const string AttendanceRequestDeleted = "Attendance request deleted successfully.";
-        public const string InvalidData = "Invalid data provided.";
+        public static readonly string AttendanceRequestsFound = "Attendance requests retrieved successfully.";
+        public static readonly string AttendanceRequestsNotFound = "No attendance requests found.";
+        public static readonly string AttendanceRequestFound = "Attendance request found.";
+        public static readonly string AttendanceRequestNotFound = "Attendance request not found.";
+        public static readonly string AttendanceRequestAdded = "Attendance request added successfully.";
+        public static readonly string AttendanceRequestUpdated = "Attendance request updated successfully.";
+        public static readonly string AttendanceRequestDeleted = "Attendance request deleted successfully.";
+        public static readonly string InvalidData = "Invalid data provided.";
     }
 }

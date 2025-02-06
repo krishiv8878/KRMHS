@@ -17,6 +17,7 @@
         IRoleMasterRepository RoleMaster { get; }
 
         IAttendanceRequestRepository AttendanceRequests { get; }
+        IEmployeeAttendanceRepository EmployeeAttendance { get; }
 
         int Save();
     }
