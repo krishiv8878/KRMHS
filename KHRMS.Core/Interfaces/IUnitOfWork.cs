@@ -19,6 +19,8 @@
         IAttendanceRequestRepository AttendanceRequests { get; }
         IEmployeeAttendanceRepository EmployeeAttendance { get; }
 
+        IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
+
         int Save();
     }
 }
