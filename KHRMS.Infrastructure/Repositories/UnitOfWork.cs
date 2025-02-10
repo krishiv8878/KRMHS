@@ -28,6 +28,8 @@ namespace KHRMS.Infrastructure
         public IAttendanceRequestRepository AttendanceRequests { get; }
 
         public IEmployeeAttendanceRepository EmployeeAttendance  { get; }
+
+        public IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
         public UnitOfWork(KHRMSContextClass dbContext,
                             ICandidateRepository candidateRepository,
                             ISkillRepository skillRepository,
@@ -42,7 +44,8 @@ namespace KHRMS.Infrastructure
                             IRoleMasterRepository roleMaster,
                             IEmployeeRoleMappingRepository employeeRoleMappings,
                             IAttendanceRequestRepository attendanceRequestRepository,
-                            IEmployeeAttendanceRepository employeeAttendanceRepository)
+                            IEmployeeAttendanceRepository employeeAttendanceRepository,
+                            IEmployeePaymentInfoRepository employeePaymentInfo)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
@@ -59,6 +62,8 @@ namespace KHRMS.Infrastructure
             EmployeeRoleMappings = employeeRoleMappings;
             AttendanceRequests = attendanceRequestRepository;
             EmployeeAttendance = employeeAttendanceRepository;
+            EmployeePaymentInfo = employeePaymentInfo;
+            
         }
 
         public int Save()

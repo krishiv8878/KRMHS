@@ -29,21 +29,6 @@ namespace KHRMS
         }
        
 
-        //[HttpGet("GetById/{id}")]
-        //public async Task<IActionResult> GetById(long id)
-        //{
-        //    var attendance = await _attendanceService.GetByIdAsync(id);
-        //    if (attendance == null)
-        //        return NotFound(new ApiResponse<string> { StatusCode = (int)HttpStatusCode.NotFound, Message = "Record not found" });
-
-        //    return Ok(new ApiResponse<EmployeeAttendance>
-        //    {
-        //        StatusCode = (int)HttpStatusCode.OK,
-        //        Message = "Record found.",
-        //        Data = attendance
-        //    });
-        //}
-
         [HttpGet]
         [Route("GetByEmployeeId/{employeeId}")]
         public async Task<IActionResult> GetByEmployeeId(long employeeId)
@@ -64,6 +49,7 @@ namespace KHRMS
                 Message = ApiMessageConstant.AttendanceRequestFound,
                 Data = attendances
             };
+
             return Ok(response);
         }
       

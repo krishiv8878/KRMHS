@@ -22,17 +22,21 @@ namespace KHRMS.Services
         public async Task AddAsync(AttendanceRequest attendanceRequest)
         {
             await _unitOfWork.AttendanceRequests.Add(attendanceRequest);
+            var result = _unitOfWork.Save();
+
         }
 
         public Task UpdateAsync(AttendanceRequest attendanceRequest)
         {
             _unitOfWork.AttendanceRequests.Update(attendanceRequest);
+            var result = _unitOfWork.Save();
             return Task.CompletedTask;
         }
 
         public Task DeleteAsync(long id)
         {
             _unitOfWork.AttendanceRequests.DeleteAsync(id);
+            var result = _unitOfWork.Save();
             return Task.CompletedTask;
         }
     }
