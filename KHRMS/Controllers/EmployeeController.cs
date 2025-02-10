@@ -1,6 +1,7 @@
 ﻿using KHRMS.Core;
 using KHRMS.Infrastructure;
 using KHRMS.Services;
+using KHRMS.Services.Request;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -26,7 +27,7 @@ namespace KHRMS
                 return NotFound();
             }
             // Use the wrapper class to create a consistent response
-            var response = new ApiResponse<List<Employee>>
+            var response = new ApiResponse<List<EmployeesDTO>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
                 Message = employees.Any() ? ApiMessageConstant.EmployeeFound : ApiMessageConstant.NoEmployeeFound,
@@ -42,9 +43,9 @@ namespace KHRMS
         /// <returns></returns>
         [HttpPost]
         [Route("AddEmployee")]
-        public async Task<IActionResult> AddEmployee(Employee employee)
+        public async Task<IActionResult> AddEmployee(EmployeeRequestModel employeerequestModel)
         {
-            var isEmployeeAdded = await _employeeService.CreateEmployee(employee);
+            var isEmployeeAdded = await _employeeService.CreateEmployee(employeerequestModel);
             if (isEmployeeAdded)
             {
                 // Use the wrapper class to create a consistent response
@@ -75,9 +76,9 @@ namespace KHRMS
         /// <returns></returns>
         [HttpPut]
         [Route("UpdateEmployee")]
-        public async Task<IActionResult> UpdateEmployee(Employee employee)
+        public async Task<IActionResult> UpdateEmployee(EmployeeRequestModel employeeRequestModel)
         {
-            var isEmployeeEdited = await _employeeService.UpdateEmployee(employee);
+            var isEmployeeEdited = await _employeeService.UpdateEmployee(employeeRequestModel);
             if (isEmployeeEdited)
             {
                 // Use the wrapper class to create a consistent response
