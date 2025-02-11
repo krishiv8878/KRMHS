@@ -1,13 +1,14 @@
 ﻿using KHRMS.Core;
+using KHRMS.Services.Request;
 
 namespace KHRMS.Services
 {
     public interface IEmployeeService
     {
-        Task<bool> CreateEmployee(Employee employee);
-        Task<IEnumerable<Employee>> GetAllEmployees();
+        Task<bool> CreateEmployee(EmployeeRequestModel employeeRequestModel);
+        Task<IEnumerable<EmployeesDTO>> GetAllEmployees();
         Task<Employee> GetEmployeeById(int employeeId);
-        Task<bool> UpdateEmployee(Employee employee);
+        Task<bool> UpdateEmployee(EmployeeRequestModel employeeRequestModel);
         Task<bool> DeleteEmployee(long employeeId);
     }
 }
