@@ -29,7 +29,7 @@ namespace KHRMS.Infrastructure
             services.AddScoped<IAttendanceRequestRepository, AttendanceRequestRepository>();
             services.AddScoped<IEmployeeAttendanceRepository, EmployeeAttendanceRepository>();
             services.AddScoped<IEmployeePaymentInfoRepository, EmployeePaymentInfoRepository>();
-            services.AddScoped<IDocumentMasterRepository, DocumentMasterRepository>();
+            services.AddScoped<IEmployeeDocumentRepository, EmployeeDocumentRepository>();
             return services;
         }
     }

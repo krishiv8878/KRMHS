@@ -1,4 +1,5 @@
-﻿using KHRMS.Core;
+﻿using Azure;
+using KHRMS.Core;
 using KHRMS.Infrastructure;
 using KHRMS.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +15,7 @@ namespace KHRMS
     {
         private readonly IEmployeeAttendanceService _attendanceService = employeeAttendanceService;
 
-    
+
 
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
@@ -27,7 +28,7 @@ namespace KHRMS
                 Data = attendances
             });
         }
-       
+
 
         [HttpGet]
         [Route("GetByEmployeeId/{employeeId}")]
@@ -52,7 +53,7 @@ namespace KHRMS
 
             return Ok(response);
         }
-      
+
 
         [HttpPost]
         [Route("AddEmployeeAttendanceRequest")]
@@ -76,7 +77,7 @@ namespace KHRMS
             };
             return Ok(response);
         }
- 
+
         [HttpPut]
         [Route("UpdateEmployeeAttendanceRequest")]
         public async Task<IActionResult> UpdateEmployeeAttendanceRequest(EmployeeAttendance attendance)
@@ -100,24 +101,33 @@ namespace KHRMS
             return Ok(response);
 
         }
-       
-        //extra
+
         [HttpDelete]
         [Route("DeleteEmployeeAttendanceRequest/{id}")]
         public async Task<IActionResult> DeleteEmployeeAttendanceRequest(long id)
         {
+            //await _attendanceService.DeleteAsync(id);
+            //var response = new ApiResponse<bool>
+            //{
+            //    StatusCode = (int)HttpStatusCode.OK,
+            //    Message = ApiMessageConstant.AttendanceRequestDeleted,
+            //    Data = true
+            //};
+            //return Ok(response);
+            var document = await _attendanceService.GetByIdAsync(id);
+            if (document == null)
+                return NotFound();
+
             await _attendanceService.DeleteAsync(id);
-            var response = new ApiResponse<bool>
+            return Ok(new ApiResponse<bool>
             {
                 StatusCode = (int)HttpStatusCode.OK,
                 Message = ApiMessageConstant.AttendanceRequestDeleted,
                 Data = true
-            };
-            return Ok(response);
+            });
+
         }
     }
-
-
 
 }
 

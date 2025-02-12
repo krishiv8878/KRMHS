@@ -31,7 +31,7 @@ namespace KHRMS.Infrastructure
 
         public IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
 
-        public IDocumentMasterRepository DocumentMaster { get; }
+        public IEmployeeDocumentRepository EmployeementDocument { get; }
         public UnitOfWork(KHRMSContextClass dbContext,
                             ICandidateRepository candidateRepository,
                             ISkillRepository skillRepository,
@@ -48,7 +48,7 @@ namespace KHRMS.Infrastructure
                             IAttendanceRequestRepository attendanceRequestRepository,
                             IEmployeeAttendanceRepository employeeAttendanceRepository,
                             IEmployeePaymentInfoRepository employeePaymentInfo,
-                            IDocumentMasterRepository employeeDocumentInfo)
+                            IEmployeeDocumentRepository employeeDocumentInfo)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
@@ -66,7 +66,7 @@ namespace KHRMS.Infrastructure
             AttendanceRequests = attendanceRequestRepository;
             EmployeeAttendance = employeeAttendanceRepository;
             EmployeePaymentInfo = employeePaymentInfo;
-            DocumentMaster = employeeDocumentInfo;
+            EmployeementDocument = employeeDocumentInfo;
 
 
         }

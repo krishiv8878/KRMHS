@@ -20,7 +20,7 @@
         IEmployeeAttendanceRepository EmployeeAttendance { get; }
 
         IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
-        IDocumentMasterRepository  DocumentMaster { get; }
+        IEmployeeDocumentRepository  EmployeementDocument { get; }
 
         int Save();
     }
