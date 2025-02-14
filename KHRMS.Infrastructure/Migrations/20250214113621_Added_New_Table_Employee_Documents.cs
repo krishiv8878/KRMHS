@@ -18,11 +18,7 @@ namespace KHRMS.Infrastructure.Migrations
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     EmployeeId = table.Column<long>(type: "bigint", nullable: false),
-                    DocumentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DocumentType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DocumentExtension = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DocumentContent = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
                     UploadedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UploadedBy = table.Column<long>(type: "bigint", nullable: false),
                     CreatedBy = table.Column<int>(type: "int", nullable: false),
