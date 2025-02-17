@@ -53,18 +53,17 @@ namespace KHRMS
                 return NotFound(new ApiResponse<EmployeeDocumentInfo>
                 {
                     StatusCode = (int)HttpStatusCode.NotFound,
-                    Message = "Document not found.",
+                    Message = ApiMessageConstant.EmployeeDocumentNotFound,
                     Data = null
-                });
+                }); ;
             }
             return Ok(new ApiResponse<EmployeeDocumentInfo>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee document information retrieved successfully.",
+                Message = ApiMessageConstant.EmployeeDocumentFound,
                 Data = document
             });
         }
-
 
 
         /// <summary>
@@ -166,7 +165,7 @@ namespace KHRMS
             return Ok(new ApiResponse<bool>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Document deleted successfully.",
+                Message = ApiMessageConstant.DocumentRequestDeleted,
                 Data = true
             });
         }

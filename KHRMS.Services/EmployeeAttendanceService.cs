@@ -1,4 +1,5 @@
 ﻿using KHRMS.Core;
+using System.Reflection.Metadata;
 
 namespace KHRMS.Services
 {
@@ -37,14 +38,19 @@ namespace KHRMS.Services
             return Task.CompletedTask;
         }
 
-        public  Task DeleteAsync(long id)
+        public async Task DeleteAsync(long id)
         {
-            _unitOfWork.EmployeeAttendance.DeleteAsync(id);
-            var result = _unitOfWork.Save();
-            return Task.CompletedTask;
+            var attendance = await _unitOfWork.EmployeeAttendance.GetById(id);          
+            if (attendance != null)
+            {
+                _unitOfWork.EmployeeAttendance.Delete(attendance);
+                _unitOfWork.Save();
+            }
+
 
         }
-       
+      
+
     }
 }
 

@@ -9,7 +9,6 @@ namespace KHRMS.Services
         Task<EmployeeDocumentInfo> GetByIdAsync(long id);
         Task AddAsync(EmployeeDocumentInfo document);
         Task DeleteAsync(long id);
-        //Task<bool> UploadDocument(IFormFile file, EmployeeDocumentInfo document);
-       // Task<bool> UploadDocument(EmployeeDocumentInfo model);
+        
     }
 }

@@ -24,7 +24,7 @@ namespace KHRMS
             return Ok(new ApiResponse<IEnumerable<EmployeeAttendance>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee attendance records retrieved successfully.",
+                Message = ApiMessageConstant.AllAttendanceRequestsFound,
                 Data = attendances
             });
         }
@@ -106,14 +106,7 @@ namespace KHRMS
         [Route("DeleteEmployeeAttendanceRequest/{id}")]
         public async Task<IActionResult> DeleteEmployeeAttendanceRequest(long id)
         {
-            //await _attendanceService.DeleteAsync(id);
-            //var response = new ApiResponse<bool>
-            //{
-            //    StatusCode = (int)HttpStatusCode.OK,
-            //    Message = ApiMessageConstant.AttendanceRequestDeleted,
-            //    Data = true
-            //};
-            //return Ok(response);
+         
             var document = await _attendanceService.GetByIdAsync(id);
             if (document == null)
                 return NotFound();
