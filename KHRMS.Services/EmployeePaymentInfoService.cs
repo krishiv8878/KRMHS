@@ -1,5 +1,4 @@
 ﻿using KHRMS.Core;
-using KHRMS.Services;
 
 namespace KHRMS.Services
 {
@@ -20,20 +19,20 @@ namespace KHRMS.Services
         {
 
             await _unitOfWork.EmployeePaymentInfo.Add(entity);
-            var result = _unitOfWork.Save();          
+            _unitOfWork.Save();
         }
 
         public Task UpdateAsync(EmployeePaymentInfo entity)
         {
             _unitOfWork.EmployeePaymentInfo.Update(entity);
-            var result = _unitOfWork.Save();
+            _unitOfWork.Save();
             return Task.CompletedTask;
         }
 
         public Task DeleteAsync(long id)
         {
             unitOfWork.EmployeePaymentInfo.DeleteAsync(id);
-            var result = _unitOfWork.Save();
+           _unitOfWork.Save();
             return Task.CompletedTask;
 
         }

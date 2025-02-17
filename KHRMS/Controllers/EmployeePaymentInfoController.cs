@@ -1,5 +1,4 @@
-﻿using Azure;
-using KHRMS.Core;
+﻿using KHRMS.Core;
 using KHRMS.Infrastructure;
 using KHRMS.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +25,7 @@ namespace KHRMS
             return Ok(new ApiResponse<IEnumerable<EmployeePaymentInfo>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee payment information retrieved successfully.",
+                Message = ApiMessageConstant.AllEmployeePaymentRequestsFound,
                 Data = entities
             });
         }
@@ -46,14 +45,14 @@ namespace KHRMS
                 return NotFound(new ApiResponse<EmployeePaymentInfo>
                 {
                     StatusCode = (int)HttpStatusCode.NotFound,
-                    Message = "Employee payment information not found.",
+                    Message = ApiMessageConstant.EmployeePaymentRequestsNotFound,
                     Data = null
                 });
             }
             return Ok(new ApiResponse<EmployeePaymentInfo>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee payment information retrieved successfully.",
+                Message = ApiMessageConstant.EmployeePaymentRequestsFound,
                 Data = entity
             });
         }
@@ -71,7 +70,7 @@ namespace KHRMS
                 return BadRequest(new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = "Invalid data.",
+                    Message = ApiMessageConstant.InvalidDataofPaymentInfo,
                     Data = false
                 });
             }
@@ -79,7 +78,7 @@ namespace KHRMS
             return Ok(new ApiResponse<bool>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee payment information added successfully.",
+                Message = ApiMessageConstant.EmployeePaymentInfoAdd,
                 Data = true
             });
         }
@@ -98,7 +97,7 @@ namespace KHRMS
                 return BadRequest(new ApiResponse<bool>
                 {
                     StatusCode = (int)HttpStatusCode.BadRequest,
-                    Message = "Invalid data.",
+                    Message = ApiMessageConstant.InvalidData,
                     Data = false
                 });
             }
@@ -106,7 +105,7 @@ namespace KHRMS
             return Ok(new ApiResponse<bool>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee payment information updated successfully.",
+                Message = ApiMessageConstant.PaymenInfoeRequestUpdated,
                 Data = true
             });
         }
@@ -118,14 +117,18 @@ namespace KHRMS
         [HttpDelete("DeletePaymentInfo/{id}")]
         public async Task<IActionResult> Delete(long id)
         {
+            var paymentinfo = await _employeePaymentInfoService.GetByIdAsync(id);
+            if (paymentinfo == null)
+                return NotFound();
             await _employeePaymentInfoService.DeleteAsync(id);
             return Ok(new ApiResponse<bool>
             {
                 StatusCode = (int)HttpStatusCode.OK,
-                Message = "Employee payment information deleted successfully.",
+                Message = ApiMessageConstant.PaymentInfoRequestDeleted,
                 Data = true
             });
         }
+        
     }
 
 

@@ -1,4 +1,7 @@
-﻿namespace KHRMS
+﻿using KHRMS.Core;
+using Microsoft.VisualBasic;
+
+namespace KHRMS
 {
     public static class ApiMessageConstant
     {
@@ -142,6 +145,7 @@
         /// This is Attendance request Message constant
         /// </summary>
         public static readonly string AttendanceRequestsFound = "Attendance requests retrieved successfully.";
+        public static readonly string AllAttendanceRequestsFound = "Employee attendance records retrieved successfully.";
         public static readonly string AttendanceRequestsNotFound = "No attendance requests found.";
         public static readonly string AttendanceRequestFound = "Attendance request found.";
         public static readonly string AttendanceRequestNotFound = "Attendance request not found.";
@@ -149,5 +153,23 @@
         public static readonly string AttendanceRequestUpdated = "Attendance request updated successfully.";
         public static readonly string AttendanceRequestDeleted = "Attendance request deleted successfully.";
         public static readonly string InvalidData = "Invalid data provided.";
+
+        /// <summary>
+        /// This is Employee Document request Message constant
+        /// </summary>
+        public static readonly string EmployeeDocumentNotFound = "Employee Document not found.";
+        public static readonly string EmployeeDocumentFound = "Employee document information retrieved successfully.";     
+        public static readonly string DocumentRequestDeleted = "Document deleted successfully.";
+
+        /// <summary>
+        /// This is Employee Payment request Message constant
+        /// </summary>
+        public static readonly string AllEmployeePaymentRequestsFound = "Employee payment information retrieved successfully.";
+        public static readonly string EmployeePaymentRequestsNotFound = "Employee payment information not found.";
+        public static readonly string EmployeePaymentRequestsFound = "Employee payment information retrieved successfully.";
+        public static readonly string InvalidDataofPaymentInfo = "Invalid data.";
+        public static readonly string EmployeePaymentInfoAdd = "Employee payment information added successfully.";
+        public static readonly string PaymenInfoeRequestUpdated = "Employee payment information updated successfully.";
+        public static readonly string PaymentInfoRequestDeleted = "Employee payment information deleted successfully.";
     }
 }

@@ -21,6 +21,7 @@ builder.Services.AddScoped<IEmployeeRoleMappingService, EmployeeRoleMappingServi
 builder.Services.AddScoped<IAttendanceRequestService, AttendanceRequestService>();
 builder.Services.AddScoped<IEmployeeAttendanceService, EmployeeAttendanceService>();
 builder.Services.AddScoped<IEmployeePaymentInfoService, EmployeePaymentInfoService>();
+builder.Services.AddScoped<IEmployeeDocumentService, EmployeeDocumentService>();
 
 builder.Services.AddControllers(); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
