@@ -171,5 +171,16 @@ namespace KHRMS
         public static readonly string EmployeePaymentInfoAdd = "Employee payment information added successfully.";
         public static readonly string PaymenInfoeRequestUpdated = "Employee payment information updated successfully.";
         public static readonly string PaymentInfoRequestDeleted = "Employee payment information deleted successfully.";
+
+        /// <summary>
+        /// This is Employee Shift Type request Message constant
+        /// </summary>
+        public static readonly string AllEmployeeShiftRecordRequestsFound = "Employees Shift Records retrieved successfully.";
+        public static readonly string EmployeeShiftRequestsNotFound = "Employee Shift not found";
+        public static readonly string EmployeeShiftRequestsFound = "Employee Shift information retrieved successfully.";
+        public static readonly string InvalidDataofShiftInfo = "Invalid data.";
+        public static readonly string EmployeeShifttInfoAdd = "Employee Shift information added successfully.";
+        public static readonly string ShiftInfoeRequestUpdated = "Employee Shift information updated successfully.";
+        public static readonly string ShiftInfoRequestDeleted = "Employee Shift information deleted successfully.";
     }
 }
