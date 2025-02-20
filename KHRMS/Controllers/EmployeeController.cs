@@ -27,7 +27,7 @@ namespace KHRMS
                 return NotFound();
             }
             // Use the wrapper class to create a consistent response
-            var response = new ApiResponse<List<EmployeesDTO>>
+            var response = new ApiResponse<List<EmployeeRequestModel>>
             {
                 StatusCode = (int)HttpStatusCode.OK,
                 Message = employees.Any() ? ApiMessageConstant.EmployeeFound : ApiMessageConstant.NoEmployeeFound,

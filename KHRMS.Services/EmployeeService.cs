@@ -68,13 +68,13 @@ namespace KHRMS.Services
             return false;
         }
 
-        public async Task<IEnumerable<EmployeesDTO>> GetAllEmployees()
+        public async Task<IEnumerable<EmployeeRequestModel>> GetAllEmployees()
         {
             var employees = await _unitOfWork.Employees.GetAll();
             var employeeroleMapping = await _unitOfWork.EmployeeRoleMappings.GetAll();
             var rolemaster = (await _unitOfWork.RoleMaster.GetAll()).ToDictionary(role => role.Id);
 
-            var employeesWithRoles = employees.Select(emp => new EmployeesDTO
+            var employeesWithRoles = employees.Select(emp => new EmployeeRequestModel
             {
                 Id = emp.Id,
                 FirstName = emp.FirstName,
@@ -89,11 +89,11 @@ namespace KHRMS.Services
                 PermanentAddress = emp.PermanentAddress,
                 IsActive = emp.IsActive,
                 CreatedDate = emp.CreatedDate,
-                RolesName = employeeroleMapping
-           .Where(mapping => mapping.EmployeeId == emp.Id && rolemaster.ContainsKey(mapping.RoleId) && mapping.IsActive)
-           .Select(mapping => rolemaster[mapping.RoleId].RoleName ?? string.Empty)
-           .Where(roleName => !string.IsNullOrEmpty(roleName))
-           .ToList()
+                RoleIds = employeeroleMapping
+        .Where(mapping => mapping.EmployeeId == emp.Id && mapping.IsActive)
+        .Select(mapping => mapping.RoleId)
+        .Where(roleId => rolemaster.ContainsKey(roleId))
+        .ToList()
             }).ToList();
 
             return employeesWithRoles;

@@ -6,7 +6,7 @@ namespace KHRMS.Services
     public interface IEmployeeService
     {
         Task<bool> CreateEmployee(EmployeeRequestModel employeeRequestModel);
-        Task<IEnumerable<EmployeesDTO>> GetAllEmployees();
+        Task<IEnumerable<EmployeeRequestModel>> GetAllEmployees();
         Task<Employee> GetEmployeeById(int employeeId);
         Task<bool> UpdateEmployee(EmployeeRequestModel employeeRequestModel);
         Task<bool> DeleteEmployee(long employeeId);

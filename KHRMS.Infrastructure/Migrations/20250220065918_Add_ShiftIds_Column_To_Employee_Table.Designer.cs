@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KHRMS.Infrastructure.Migrations
 {
     [DbContext(typeof(KHRMSContextClass))]
-    [Migration("20250219061434_Add_ShiftIds_Column_To_Employee_Table")]
+    [Migration("20250220065918_Add_ShiftIds_Column_To_Employee_Table")]
     partial class Add_ShiftIds_Column_To_Employee_Table
     {
         /// <inheritdoc />
