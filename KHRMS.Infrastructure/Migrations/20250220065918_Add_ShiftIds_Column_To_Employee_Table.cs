@@ -11,6 +11,12 @@ namespace KHRMS.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddColumn<string>(
+                name: "ShiftIds",
+                table: "Employees",
+                type: "nvarchar(max)",
+                nullable: true);
+
             migrationBuilder.CreateTable(
                 name: "ShiftMasters",
                 columns: table => new
@@ -38,6 +44,10 @@ namespace KHRMS.Infrastructure.Migrations
         {
             migrationBuilder.DropTable(
                 name: "ShiftMasters");
+
+            migrationBuilder.DropColumn(
+                name: "ShiftIds",
+                table: "Employees");
         }
     }
 }
