@@ -22,6 +22,9 @@
         IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
         IEmployeeDocumentRepository  EmployeementDocument { get; }
 
+        IShiftRepository ShiftRepository { get; }
+
+
         int Save();
     }
 }

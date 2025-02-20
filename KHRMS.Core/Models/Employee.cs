@@ -10,6 +10,7 @@ namespace KHRMS.Core
         public long Id { get; set; }
 
         public long EmployeeCode { get; set; }
+        public string? ShiftIds { get; set; }
 
         [StringLength(100)]
         [Required(ErrorMessage = "Employee FirstName is required")]
@@ -45,7 +46,7 @@ namespace KHRMS.Core
         [Required(ErrorMessage = " Employee PermanentAddress is required")]
         public string? PermanentAddress { get; set; }
 
-     
+
 
     }
 

@@ -1,4 +1,5 @@
 ﻿using KHRMS.Core;
+using Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal;
 
 namespace KHRMS.Infrastructure
 {
@@ -32,6 +33,9 @@ namespace KHRMS.Infrastructure
         public IEmployeePaymentInfoRepository EmployeePaymentInfo { get; }
 
         public IEmployeeDocumentRepository EmployeementDocument { get; }
+
+        public IShiftRepository ShiftRepository { get; }
+
         public UnitOfWork(KHRMSContextClass dbContext,
                             ICandidateRepository candidateRepository,
                             ISkillRepository skillRepository,
@@ -48,7 +52,8 @@ namespace KHRMS.Infrastructure
                             IAttendanceRequestRepository attendanceRequestRepository,
                             IEmployeeAttendanceRepository employeeAttendanceRepository,
                             IEmployeePaymentInfoRepository employeePaymentInfo,
-                            IEmployeeDocumentRepository employeeDocumentInfo)
+                            IEmployeeDocumentRepository employeementDocument,
+                            IShiftRepository shiftRepository)
         {
             _dbContext = dbContext;
             Candidates = candidateRepository;
@@ -66,9 +71,12 @@ namespace KHRMS.Infrastructure
             AttendanceRequests = attendanceRequestRepository;
             EmployeeAttendance = employeeAttendanceRepository;
             EmployeePaymentInfo = employeePaymentInfo;
-            EmployeementDocument = employeeDocumentInfo;
+            EmployeementDocument = employeementDocument;
+            
 
 
+            ShiftRepository = shiftRepository;
+            
         }
 
         public int Save()

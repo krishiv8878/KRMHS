@@ -25,5 +25,7 @@ namespace KHRMS.Infrastructure
         public DbSet<EmployeeAttendance> EmployeeAttendances { get; set; }
         public DbSet<EmployeePaymentInfo> EmployeePaymentInfos { get; set; }
         public DbSet<EmployeeDocumentInfo> Employeementdocument { get; set; }
+        public DbSet<ShiftMaster> ShiftMasters { get; set; } 
+
     }
 }
